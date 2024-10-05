@@ -35,3 +35,5 @@ C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.WebApi\obj\Debug\net8.0\
 C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.WebApi\bin\Debug\net8.0\nasa.Core.dll
 C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.WebApi\bin\Debug\net8.0\nasa.Core.pdb
 C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.WebApi\bin\Debug\net8.0\appsettings.Local.json
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.WebApi\bin\Debug\net8.0\nasa_asteroid_earth.json
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.WebApi\bin\Debug\net8.0\nasa_asteroid_solar_system.json

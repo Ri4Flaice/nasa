@@ -1,7 +1,6 @@
 using System.Globalization;
 using System.Text.Json;
 
-using nasa.Core.Models;
 using nasa.Core.Models.GetAsteroidsSolarSystem;
 
 namespace nasa.WebApi.business;
@@ -21,7 +20,7 @@ public class GetAsteroidsSolarSystem
     {
         var response = await _httpClient.GetAsync(_apiUrl);
         response.EnsureSuccessStatusCode();
-        
+
         var jsonResponse = await response.Content.ReadAsStringAsync();
 
         var asteroidsData = JsonSerializer.Deserialize<List<AsteroidSolarSystemResponse>>(jsonResponse);
@@ -39,6 +38,11 @@ public class GetAsteroidsSolarSystem
             ArgumentOfPeriapsisDegrees = double.Parse(asteroid.w_deg, CultureInfo.InvariantCulture),
             AscendingNodeDegrees = double.Parse(asteroid.node_deg, CultureInfo.InvariantCulture)
         }).ToList();
+        
+        foreach (var asteroid in asteroidModels)
+        {
+            asteroid.CalculateOrbit();
+        }
 
         return asteroidModels;
     }

@@ -1,4 +1,4 @@
-namespace nasa.Core.Models;
+namespace nasa.Core.Models.GetAsteroidsSolarSystem;
 
 public class AsteroidSolarSystemResponse
 {
