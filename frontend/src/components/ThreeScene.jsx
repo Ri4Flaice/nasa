@@ -2,8 +2,20 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
+// Импортируйте изображения
+import mercuryTexture from '../images/1.jpg';
+import venusTexture from '../images/2.png';
+import earthTexture from '../images/3.jpg';
+import marsTexture from '../images/4.jpg';
+import jupiterTexture from '../images/5.webp';
+import saturnTexture from '../images/6.jpg';
+import uranusTexture from '../images/7.jpg';
+
 const ThreeScene = () => {
   const mountRef = useRef(null);
+  const raycaster = new THREE.Raycaster();
+  const mouse = new THREE.Vector2();
+  const planets = [];
 
   useEffect(() => {
     const scene = new THREE.Scene();
@@ -15,98 +27,83 @@ const ThreeScene = () => {
     );
     const renderer = new THREE.WebGLRenderer({ antialias: true });
 
-    // Set the renderer size to the window's inner size
     renderer.setSize(window.innerWidth, window.innerHeight);
     mountRef.current.appendChild(renderer.domElement);
 
-    // Create the sun
-    const sunGeometry = new THREE.SphereGeometry(2, 32, 32); // Radius of 2
-    const sunMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 }); // Yellow color
+    const loader = new THREE.TextureLoader();
+    const sunTexture = loader.load("https://ak6.picdn.net/shutterstock/videos/366016/thumb/1.jpg");
+    const backgroundTexture = loader.load('https://avatars.mds.yandex.net/i?id=476493bb16637b71e91cff846742698c_l-8311401-images-thumbs&n=13');
+
+    scene.background = backgroundTexture;
+
+    const sunGeometry = new THREE.SphereGeometry(2, 32, 32);
+    const sunMaterial = new THREE.MeshBasicMaterial({ map: sunTexture });
     const sun = new THREE.Mesh(sunGeometry, sunMaterial);
     scene.add(sun);
 
-    // Create a ring around the sun
-    const ringGeometry = new THREE.TorusGeometry(3, 0.2, 16, 100); // Inner radius 3, tube radius 0.2
-    const ringMaterial = new THREE.MeshBasicMaterial({
-      color: 0xffcc00,
-      wireframe: false,
-    }); // Gold color for the ring
-    const ring = new THREE.Mesh(ringGeometry, ringMaterial);
-    scene.add(ring);
+    const planetData = [
+      { distance: 5, size: 0.5, speed: 1.02, texture: mercuryTexture },
+      { distance: 7, size: 0.6, speed: 1.018, texture: venusTexture },
+      { distance: 9, size: 0.7, speed: 1.015, texture: earthTexture },
+      { distance: 11, size: 0.5, speed: 1.013, texture: marsTexture },
+      { distance: 14, size: 1.2, speed: 1.008, texture: jupiterTexture },
+      { distance: 17, size: 1.0, speed: 1.006, texture: saturnTexture },
+      { distance: 20, size: 0.9, speed: 1.004, texture: uranusTexture }
+    ];
 
-    // Load texture for space objects
-    const loader = new THREE.TextureLoader();
-    const spaceObjectCount = 10; // Number of space objects
-    const spaceObjects = [];
-
-    // Create space objects and position them on the ring
-    const createSpaceObject = (index) => {
+    const createPlanet = (distance, size, textureUrl) => {
       return new Promise((resolve) => {
-        loader.load(
-          "https://images.unsplash.com/photo-1600095355173-b970ea5ceb46?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Replace with the URL to your image
-          (texture) => {
-            const geometry = new THREE.SphereGeometry(0.5, 32, 32); // Radius of 0.5
-            const material = new THREE.MeshBasicMaterial({ map: texture });
-            const spaceObject = new THREE.Mesh(geometry, material);
+        const texture = new THREE.TextureLoader().load(textureUrl);
+        const geometry = new THREE.SphereGeometry(size, 32, 32);
+        const material = new THREE.MeshBasicMaterial({ map: texture });
+        const planet = new THREE.Mesh(geometry, material);
 
-            // Position space objects evenly spaced along the ring
-            const angle = (Math.PI * 2 * index) / spaceObjectCount; // Evenly spaced angle
-            const x = 3 * Math.cos(angle); // Distance from sun (inner radius of the ring)
-            const z = 3 * Math.sin(angle);
-            spaceObject.position.set(x, Math.random() * 2 - 1, z); // Random Y position
-
-            scene.add(spaceObject);
-            spaceObjects.push(spaceObject);
-            resolve();
-          },
-          undefined,
-          (err) => {
-            console.error(
-              "An error happened while loading the space object image.",
-              err
-            );
-          }
-        );
+        planet.position.x = distance;
+        planets.push({ planet, distance, speed: planetData.find(p => p.distance === distance).speed });
+        scene.add(planet);
+        resolve(planet);
       });
     };
 
-    // Create all space objects
-    Promise.all(
-      Array.from({ length: spaceObjectCount }, (_, index) =>
-        createSpaceObject(index)
-      )
-    ).then(() => {
-      camera.position.z = 10;
+    Promise.all(planetData.map(planet => createPlanet(planet.distance, planet.size, planet.texture)))
+      .then(() => {
+        camera.position.z = 25;
 
-      // Add OrbitControls for camera interaction
-      const controls = new OrbitControls(camera, renderer.domElement);
-      controls.enableDamping = true;
-      controls.dampingFactor = 0.05;
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
 
-      const animate = () => {
-        requestAnimationFrame(animate);
-        // Rotate the sun
-        sun.rotation.y += 0.01;
+        const animate = () => {
+          requestAnimationFrame(animate);
+          sun.rotation.y += 0.01;
 
-        // Rotate the ring
-        ring.rotation.z += 0.005; // Rotate the ring slowly
+          const time = Date.now() * 0.001;
+          planets.forEach(({ planet, distance, speed }) => {
+            planet.position.x = distance * Math.cos(time * speed);
+            planet.position.z = distance * Math.sin(time * speed);
+          });
 
-        // Update space object positions to keep them fixed on the ring
-        spaceObjects.forEach((spaceObject, index) => {
-          const angle = (Math.PI * 2 * index) / spaceObjectCount; // Calculate angle based on index
-          const x = 3 * Math.cos(angle);
-          const z = 3 * Math.sin(angle);
-          spaceObject.position.set(x, spaceObject.position.y, z); // Update position
-        });
+          controls.update();
+          renderer.render(scene, camera);
+        };
 
-        controls.update(); // Required if damping is enabled
-        renderer.render(scene, camera);
-      };
+        animate();
+      });
 
-      animate();
-    });
+    const onMouseClick = (event) => {
+      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+      mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
-    // Handle window resize
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObjects(scene.children);
+      if (intersects.length > 0) {
+        const intersectedObject = intersects[0].object;
+        console.log('Кликнули по объекту:', intersectedObject);
+      }
+    };
+
+    window.addEventListener("click", onMouseClick);
+
     const handleResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
@@ -117,6 +114,7 @@ const ThreeScene = () => {
 
     return () => {
       mountRef.current.removeChild(renderer.domElement);
+      window.removeEventListener("click", onMouseClick);
       window.removeEventListener("resize", handleResize);
     };
   }, []);
@@ -124,7 +122,7 @@ const ThreeScene = () => {
   return (
     <div
       ref={mountRef}
-      className="w-full h-full cursor-pointer" // Tailwind classes to take full width and height
+      className="w-full h-full cursor-pointer"
     />
   );
 };
