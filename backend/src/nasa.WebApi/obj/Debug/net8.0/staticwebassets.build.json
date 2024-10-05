@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Z07s92asMF921CbwG1sgE54K7xpy1BlG8T4lnwurDTY=",
+  "Source": "nasa.WebApi",
+  "BasePath": "_content/nasa.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

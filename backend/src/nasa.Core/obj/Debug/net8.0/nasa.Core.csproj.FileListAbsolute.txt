@@ -1,0 +1,12 @@
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\bin\Debug\net8.0\nasa.Core.deps.json
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\bin\Debug\net8.0\nasa.Core.dll
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\bin\Debug\net8.0\nasa.Core.pdb
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\obj\Debug\net8.0\nasa.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\obj\Debug\net8.0\nasa.Core.AssemblyInfoInputs.cache
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\obj\Debug\net8.0\nasa.Core.AssemblyInfo.cs
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\obj\Debug\net8.0\nasa.Core.csproj.CoreCompileInputs.cache
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\obj\Debug\net8.0\nasa.Core.sourcelink.json
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\obj\Debug\net8.0\nasa.Core.dll
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\obj\Debug\net8.0\refint\nasa.Core.dll
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\obj\Debug\net8.0\nasa.Core.pdb
+C:\Users\horse\Documents\Projects\nasa\backend\src\nasa.Core\obj\Debug\net8.0\ref\nasa.Core.dll

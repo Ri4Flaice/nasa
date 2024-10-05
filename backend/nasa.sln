@@ -1,8 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E4BBC6B2-239D-440C-BDF3-ACF90E59016A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nasa.WebApi", "src\nasa.WebApi\nasa.WebApi.csproj", "{EAAA375B-7B59-4CBF-8934-62E6358D041A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nasa.Core", "src\nasa.Core\nasa.Core.csproj", "{51813EB7-FCF0-4D68-AA7C-A704703EB3DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EAAA375B-7B59-4CBF-8934-62E6358D041A} = {E4BBC6B2-239D-440C-BDF3-ACF90E59016A}
+		{51813EB7-FCF0-4D68-AA7C-A704703EB3DB} = {E4BBC6B2-239D-440C-BDF3-ACF90E59016A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAAA375B-7B59-4CBF-8934-62E6358D041A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAAA375B-7B59-4CBF-8934-62E6358D041A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAAA375B-7B59-4CBF-8934-62E6358D041A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAAA375B-7B59-4CBF-8934-62E6358D041A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51813EB7-FCF0-4D68-AA7C-A704703EB3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51813EB7-FCF0-4D68-AA7C-A704703EB3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51813EB7-FCF0-4D68-AA7C-A704703EB3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51813EB7-FCF0-4D68-AA7C-A704703EB3DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
