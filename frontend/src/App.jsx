@@ -1,13 +1,12 @@
 import { useState } from "react";
-import "./App.css";
+import "./App.css"; // Keep any global styles here
 import ThreeScene from "./components/ThreeScene";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="max-w-[1200px] mx-auto">
-      <h1 className="text-red-50">Hello</h1>
+    <div className="w-full h-screen">
       <ThreeScene />
     </div>
   );
