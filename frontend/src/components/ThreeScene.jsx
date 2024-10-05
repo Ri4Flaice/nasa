@@ -2,45 +2,55 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-// Импортируйте изображения
+// Импорт текстур для планет
+import sunTexture from '../images/2k_sun.jpg';
 import mercuryTexture from '../images/1.jpg';
-import venusTexture from '../images/2.png';
+import venusTexture from '../images/2.jpg';
 import earthTexture from '../images/3.jpg';
 import marsTexture from '../images/4.jpg';
-import jupiterTexture from '../images/5.webp';
+import jupiterTexture from '../images/5.jpg';
 import saturnTexture from '../images/6.jpg';
 import uranusTexture from '../images/7.jpg';
+import neptuneTexture from '../images/8.jpg';
 
 const ThreeScene = () => {
   const mountRef = useRef(null);
-  const raycaster = new THREE.Raycaster();
-  const mouse = new THREE.Vector2();
   const planets = [];
+  const asteroidBelt = [];
+  const asteroidOrbits = [];
 
   useEffect(() => {
+    // Инициализация сцены, камеры и рендера
     const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x000000); // Чёрный фон
+
     const camera = new THREE.PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
     );
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    camera.position.z = 25;
 
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     mountRef.current.appendChild(renderer.domElement);
 
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+
+    // Загрузка текстур
     const loader = new THREE.TextureLoader();
-    const sunTexture = loader.load("https://ak6.picdn.net/shutterstock/videos/366016/thumb/1.jpg");
-    const backgroundTexture = loader.load('https://avatars.mds.yandex.net/i?id=476493bb16637b71e91cff846742698c_l-8311401-images-thumbs&n=13');
+    const sunMap = loader.load(sunTexture);
 
-    scene.background = backgroundTexture;
-
+    // Солнце
     const sunGeometry = new THREE.SphereGeometry(2, 32, 32);
-    const sunMaterial = new THREE.MeshBasicMaterial({ map: sunTexture });
+    const sunMaterial = new THREE.MeshBasicMaterial({ map: sunMap });
     const sun = new THREE.Mesh(sunGeometry, sunMaterial);
     scene.add(sun);
 
+    // Данные планет
     const planetData = [
       { distance: 5, size: 0.5, speed: 1.02, texture: mercuryTexture },
       { distance: 7, size: 0.6, speed: 1.018, texture: venusTexture },
@@ -48,62 +58,76 @@ const ThreeScene = () => {
       { distance: 11, size: 0.5, speed: 1.013, texture: marsTexture },
       { distance: 14, size: 1.2, speed: 1.008, texture: jupiterTexture },
       { distance: 17, size: 1.0, speed: 1.006, texture: saturnTexture },
-      { distance: 20, size: 0.9, speed: 1.004, texture: uranusTexture }
+      { distance: 20, size: 0.9, speed: 1.004, texture: uranusTexture },
+      { distance: 23, size: 0.85, speed: 1.002, texture: neptuneTexture }
     ];
 
+    // Функция для создания планеты
     const createPlanet = (distance, size, textureUrl) => {
-      return new Promise((resolve) => {
-        const texture = new THREE.TextureLoader().load(textureUrl);
-        const geometry = new THREE.SphereGeometry(size, 32, 32);
-        const material = new THREE.MeshBasicMaterial({ map: texture });
-        const planet = new THREE.Mesh(geometry, material);
+      const texture = loader.load(textureUrl);
+      const geometry = new THREE.SphereGeometry(size, 32, 32);
+      const material = new THREE.MeshBasicMaterial({ map: texture });
+      const planet = new THREE.Mesh(geometry, material);
 
-        planet.position.x = distance;
-        planets.push({ planet, distance, speed: planetData.find(p => p.distance === distance).speed });
-        scene.add(planet);
-        resolve(planet);
-      });
+      planet.position.x = distance;
+      planets.push({ planet, distance, speed: planetData.find(p => p.distance === distance).speed });
+      scene.add(planet);
     };
 
-    Promise.all(planetData.map(planet => createPlanet(planet.distance, planet.size, planet.texture)))
-      .then(() => {
-        camera.position.z = 25;
+    // Создание планет
+    planetData.forEach(({ distance, size, texture }) => {
+      createPlanet(distance, size, texture);
+    });
 
-        const controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
-        controls.dampingFactor = 0.05;
+    // Создание пояса астероидов
+    const asteroidGeometry = new THREE.DodecahedronGeometry(0.3, 0);
+    const asteroidMaterial = new THREE.MeshBasicMaterial({ color: 0x808080 });
 
-        const animate = () => {
-          requestAnimationFrame(animate);
-          sun.rotation.y += 0.01;
+    for (let i = 0; i < 100; i++) {
+      const asteroid = new THREE.Mesh(asteroidGeometry, asteroidMaterial);
+      const distance = Math.random() * 30 + 10; // Радиус орбиты
+      const speed = Math.random() * 0.02 + 0.005; // Скорость движения
 
-          const time = Date.now() * 0.001;
-          planets.forEach(({ planet, distance, speed }) => {
-            planet.position.x = distance * Math.cos(time * speed);
-            planet.position.z = distance * Math.sin(time * speed);
-          });
+      asteroid.position.set(
+        distance * Math.cos(Math.random() * Math.PI * 2),
+        (Math.random() - 0.5) * 2, // Высота над плоскостью
+        distance * Math.sin(Math.random() * Math.PI * 2)
+      );
 
-          controls.update();
-          renderer.render(scene, camera);
-        };
+      asteroidBelt.push(asteroid);
+      asteroidOrbits.push({ distance, speed });
+      scene.add(asteroid);
+    }
 
-        animate();
+    // Анимация сцены
+    const animate = () => {
+      requestAnimationFrame(animate);
+      sun.rotation.y += 0.01;
+
+      const time = Date.now() * 0.001;
+
+      // Анимация планет
+      planets.forEach(({ planet, distance, speed }) => {
+        planet.position.x = distance * Math.cos(time * speed);
+        planet.position.z = distance * Math.sin(time * speed);
       });
 
-    const onMouseClick = (event) => {
-      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-      mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+      // Анимация астероидов
+      asteroidBelt.forEach((asteroid, index) => {
+        const { distance, speed } = asteroidOrbits[index];
+        asteroid.position.x = distance * Math.cos(time * speed);
+        asteroid.position.z = distance * Math.sin(time * speed);
+        asteroid.rotation.x += 0.01;
+        asteroid.rotation.y += 0.01;
+      });
 
-      raycaster.setFromCamera(mouse, camera);
-      const intersects = raycaster.intersectObjects(scene.children);
-      if (intersects.length > 0) {
-        const intersectedObject = intersects[0].object;
-        console.log('Кликнули по объекту:', intersectedObject);
-      }
+      controls.update();
+      renderer.render(scene, camera);
     };
 
-    window.addEventListener("click", onMouseClick);
+    animate();
 
+    // Управление изменением размера экрана
     const handleResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
@@ -112,19 +136,14 @@ const ThreeScene = () => {
 
     window.addEventListener("resize", handleResize);
 
+    // Очистка ресурса
     return () => {
       mountRef.current.removeChild(renderer.domElement);
-      window.removeEventListener("click", onMouseClick);
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-  return (
-    <div
-      ref={mountRef}
-      className="w-full h-full cursor-pointer"
-    />
-  );
+  return <div ref={mountRef} className="w-full h-full cursor-pointer" />;
 };
 
 export default ThreeScene;
