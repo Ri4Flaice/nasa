@@ -1,32 +1,50 @@
 using System.Text.Json;
-using nasa.Core.Models.GetAsteroids;
+using nasa.Core.Models.GetAsteroidsEarth;
+using nasa.Core.Models.GetAsteroidsSolarSystem;
 
 namespace nasa.WebApi.business;
 
 public class JsonFileWrite
 {
-    private readonly NasaAsteroidResponse? _nasaAsteroidResponse;
+    private readonly NasaAsteroidResponse? _asteroidsEarth;
+    private readonly List<AsteroidData>? _asteroidsSolarSystem;
 
-    public JsonFileWrite(NasaAsteroidResponse? nasaAsteroidResponse)
+    public JsonFileWrite(NasaAsteroidResponse? asteroidsEarth, List<AsteroidData>? asteroidsSolarSystem)
     {
-        _nasaAsteroidResponse = nasaAsteroidResponse;
+        _asteroidsEarth = asteroidsEarth;
+        _asteroidsSolarSystem = asteroidsSolarSystem;
     }
 
-    public async Task DataWriteInJson()
+    public async Task AsteroidsEarthWriteInJson()
     {
-        if (_nasaAsteroidResponse == null)
-        {
+        if (_asteroidsEarth == null)
             throw new InvalidOperationException("No data to write.");
-        }
 
         var options = new JsonSerializerOptions
         {
             WriteIndented = true
         };
 
-        const string filePath = "nasa_asteroid_data.json";
+        const string filePath = "nasa_asteroid_earth.json";
 
-        var jsonData = JsonSerializer.Serialize(_nasaAsteroidResponse, options);
+        var jsonData = JsonSerializer.Serialize(_asteroidsEarth, options);
+
+        await File.WriteAllTextAsync(filePath, jsonData);
+    }
+
+    public async Task AsteroidsSolarSystemWriteInJson()
+    {
+        if (_asteroidsSolarSystem == null)
+            throw new InvalidOperationException("No data to write.");
+        
+        var options = new JsonSerializerOptions
+        {
+            WriteIndented = true
+        };
+        
+        const string filePath = "nasa_asteroid_solar_system.json";
+
+        var jsonData = JsonSerializer.Serialize(_asteroidsSolarSystem, options);
 
         await File.WriteAllTextAsync(filePath, jsonData);
     }

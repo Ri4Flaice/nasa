@@ -1,4 +1,4 @@
-namespace nasa.Core.Models.GetAsteroids;
+namespace nasa.Core.Models.GetAsteroidsEarth;
 
 public class RelativeVelocity
 {

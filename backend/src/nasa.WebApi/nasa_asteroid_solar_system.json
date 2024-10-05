@@ -1,0 +1,1602 @@
+[
+  {
+    "ObjectName": "P/2004 R1 (McNaught)",
+    "PerihelionDistanceKm": 147532224.19896162,
+    "AphelionDistanceKm": 782396863.761,
+    "MinimumOrbitIntersectionDistanceKm": 4040788.0854776995,
+    "Eccentricity": 0.682526943,
+    "InclinationDegrees": 4.894555854,
+    "ArgumentOfPeriapsisDegrees": 0.626837835,
+    "AscendingNodeDegrees": 295.9854497
+  },
+  {
+    "ObjectName": "P/2008 S1 (Catalina-McNaught)",
+    "PerihelionDistanceKm": 178117441.39493692,
+    "AphelionDistanceKm": 890107330.665,
+    "MinimumOrbitIntersectionDistanceKm": 29037096.300740696,
+    "Eccentricity": 0.6663127807,
+    "InclinationDegrees": 15.1007464,
+    "ArgumentOfPeriapsisDegrees": 203.6490232,
+    "AscendingNodeDegrees": 111.3920029
+  },
+  {
+    "ObjectName": "1P/Halley",
+    "PerihelionDistanceKm": 87661077.75720717,
+    "AphelionDistanceKm": 5247893304.155999,
+    "MinimumOrbitIntersectionDistanceKm": 9541651.3889874,
+    "Eccentricity": 0.9671429085,
+    "InclinationDegrees": 162.2626906,
+    "ArgumentOfPeriapsisDegrees": 111.3324851,
+    "AscendingNodeDegrees": 58.42008098
+  },
+  {
+    "ObjectName": "2P/Encke",
+    "PerihelionDistanceKm": 50278705.22928355,
+    "AphelionDistanceKm": 611855291.163,
+    "MinimumOrbitIntersectionDistanceKm": 25894194.635204397,
+    "Eccentricity": 0.8482682514,
+    "InclinationDegrees": 11.77999525,
+    "ArgumentOfPeriapsisDegrees": 186.5403463,
+    "AscendingNodeDegrees": 334.5698056
+  },
+  {
+    "ObjectName": "3D/Biela",
+    "PerihelionDistanceKm": 131507448.98986109,
+    "AphelionDistanceKm": 926010819.633,
+    "MinimumOrbitIntersectionDistanceKm": 77491.6970226,
+    "Eccentricity": 0.751299,
+    "InclinationDegrees": 13.2164,
+    "ArgumentOfPeriapsisDegrees": 221.6588,
+    "AscendingNodeDegrees": 250.669
+  },
+  {
+    "ObjectName": "5D/Brorsen",
+    "PerihelionDistanceKm": 88239855.2387829,
+    "AphelionDistanceKm": 839244054.627,
+    "MinimumOrbitIntersectionDistanceKm": 54836445.8859213,
+    "Eccentricity": 0.809796,
+    "InclinationDegrees": 29.3821,
+    "ArgumentOfPeriapsisDegrees": 14.9468,
+    "AscendingNodeDegrees": 102.9676
+  },
+  {
+    "ObjectName": "7P/Pons-Winnecke",
+    "PerihelionDistanceKm": 185383900.50625396,
+    "AphelionDistanceKm": 837748075.9199998,
+    "MinimumOrbitIntersectionDistanceKm": 33538496.230103698,
+    "Eccentricity": 0.6375275046,
+    "InclinationDegrees": 22.33501476,
+    "ArgumentOfPeriapsisDegrees": 172.5061606,
+    "AscendingNodeDegrees": 93.41632728
+  },
+  {
+    "ObjectName": "8P/Tuttle",
+    "PerihelionDistanceKm": 153654454.3758513,
+    "AphelionDistanceKm": 1551329919.1589997,
+    "MinimumOrbitIntersectionDistanceKm": 14258173.056417,
+    "Eccentricity": 0.819799747,
+    "InclinationDegrees": 54.98318484,
+    "ArgumentOfPeriapsisDegrees": 207.509246,
+    "AscendingNodeDegrees": 270.341652
+  },
+  {
+    "ObjectName": "12P/Pons-Brooks",
+    "PerihelionDistanceKm": 115738948.890751,
+    "AphelionDistanceKm": 5007040732.3289995,
+    "MinimumOrbitIntersectionDistanceKm": 28019681.182109997,
+    "Eccentricity": 0.9548123942,
+    "InclinationDegrees": 74.17689423,
+    "ArgumentOfPeriapsisDegrees": 199.0284686,
+    "AscendingNodeDegrees": 255.8911444
+  },
+  {
+    "ObjectName": "13P/Olbers",
+    "PerihelionDistanceKm": 176293702.5795076,
+    "AphelionDistanceKm": 4882874499.648,
+    "MinimumOrbitIntersectionDistanceKm": 71387954.30016929,
+    "Eccentricity": 0.9302971475,
+    "InclinationDegrees": 44.60988573,
+    "ArgumentOfPeriapsisDegrees": 64.64120652,
+    "AscendingNodeDegrees": 86.10312835
+  },
+  {
+    "ObjectName": "15P/Finlay",
+    "PerihelionDistanceKm": 145992677.5804851,
+    "AphelionDistanceKm": 897587224.1999999,
+    "MinimumOrbitIntersectionDistanceKm": 1411156.7143130999,
+    "Eccentricity": 0.7201837656,
+    "InclinationDegrees": 6.798912616,
+    "ArgumentOfPeriapsisDegrees": 347.5528394,
+    "AscendingNodeDegrees": 13.7781465
+  },
+  {
+    "ObjectName": "18D/Perrine-Mrkos",
+    "PerihelionDistanceKm": 190325603.91976112,
+    "AphelionDistanceKm": 875147543.5949999,
+    "MinimumOrbitIntersectionDistanceKm": 43268192.142560996,
+    "Eccentricity": 0.6425809824,
+    "InclinationDegrees": 17.75898277,
+    "ArgumentOfPeriapsisDegrees": 166.0504171,
+    "AscendingNodeDegrees": 240.8755466
+  },
+  {
+    "ObjectName": "20D/Westphal",
+    "PerihelionDistanceKm": 187597639.02582583,
+    "AphelionDistanceKm": 4492424057.120999,
+    "MinimumOrbitIntersectionDistanceKm": 70054139.6850081,
+    "Eccentricity": 0.919831189,
+    "InclinationDegrees": 40.89006106,
+    "ArgumentOfPeriapsisDegrees": 57.08095497,
+    "AscendingNodeDegrees": 348.0064469
+  },
+  {
+    "ObjectName": "21P/Giacobini-Zinner",
+    "PerihelionDistanceKm": 154189967.92882377,
+    "AphelionDistanceKm": 897587224.1999999,
+    "MinimumOrbitIntersectionDistanceKm": 5295016.6334265,
+    "Eccentricity": 0.7068178874,
+    "InclinationDegrees": 31.90810099,
+    "ArgumentOfPeriapsisDegrees": 172.5844249,
+    "AscendingNodeDegrees": 195.3970145
+  },
+  {
+    "ObjectName": "23P/Brorsen-Metcalf",
+    "PerihelionDistanceKm": 71620386.1125731,
+    "AphelionDistanceKm": 5035464327.761999,
+    "MinimumOrbitIntersectionDistanceKm": 29002838.388350397,
+    "Eccentricity": 0.9719522579,
+    "InclinationDegrees": 19.33394047,
+    "ArgumentOfPeriapsisDegrees": 129.6106837,
+    "AscendingNodeDegrees": 311.5854622
+  },
+  {
+    "ObjectName": "24P/Schaumasse",
+    "PerihelionDistanceKm": 180266936.45531756,
+    "AphelionDistanceKm": 1041201180.0719999,
+    "MinimumOrbitIntersectionDistanceKm": 42213527.154125996,
+    "Eccentricity": 0.7048003557,
+    "InclinationDegrees": 11.75152976,
+    "ArgumentOfPeriapsisDegrees": 57.87449255,
+    "AscendingNodeDegrees": 79.8310383
+  },
+  {
+    "ObjectName": "26P/Grigg-Skjellerup",
+    "PerihelionDistanceKm": 162350757.21949992,
+    "AphelionDistanceKm": 740509459.9649999,
+    "MinimumOrbitIntersectionDistanceKm": 11889440.371753199,
+    "Eccentricity": 0.6402771379,
+    "InclinationDegrees": 22.42889388,
+    "ArgumentOfPeriapsisDegrees": 2.146692288,
+    "AscendingNodeDegrees": 211.5375548
+  },
+  {
+    "ObjectName": "27P/Crommelin",
+    "PerihelionDistanceKm": 111942211.7496563,
+    "AphelionDistanceKm": 2650874268.8039994,
+    "MinimumOrbitIntersectionDistanceKm": 32191816.198062297,
+    "Eccentricity": 0.9189810923,
+    "InclinationDegrees": 28.96687279,
+    "ArgumentOfPeriapsisDegrees": 196.0253969,
+    "AscendingNodeDegrees": 250.6264098
+  },
+  {
+    "ObjectName": "41P/Tuttle-Giacobini-Kresak",
+    "PerihelionDistanceKm": 156745303.1630818,
+    "AphelionDistanceKm": 765941097.984,
+    "MinimumOrbitIntersectionDistanceKm": 20253158.1268488,
+    "Eccentricity": 0.6604126649,
+    "InclinationDegrees": 9.228028049,
+    "ArgumentOfPeriapsisDegrees": 62.19321856,
+    "AscendingNodeDegrees": 141.0929309
+  },
+  {
+    "ObjectName": "45P/Honda-Mrkos-Pajdusakova",
+    "PerihelionDistanceKm": 79251180.62044542,
+    "AphelionDistanceKm": 824284267.5569999,
+    "MinimumOrbitIntersectionDistanceKm": 8986493.6908197,
+    "Eccentricity": 0.8246720759,
+    "InclinationDegrees": 4.252433261,
+    "ArgumentOfPeriapsisDegrees": 326.2580404,
+    "AscendingNodeDegrees": 89.0021809
+  },
+  {
+    "ObjectName": "46P/Wirtanen",
+    "PerihelionDistanceKm": 157416167.3343424,
+    "AphelionDistanceKm": 765941097.984,
+    "MinimumOrbitIntersectionDistanceKm": 10204369.9561884,
+    "Eccentricity": 0.6592025614,
+    "InclinationDegrees": 11.75713931,
+    "ArgumentOfPeriapsisDegrees": 356.3402053,
+    "AscendingNodeDegrees": 82.16439077
+  },
+  {
+    "ObjectName": "55P/Tempel-Tuttle",
+    "PerihelionDistanceKm": 146071537.0508395,
+    "AphelionDistanceKm": 2947078052.7899995,
+    "MinimumOrbitIntersectionDistanceKm": 1268739.5414067,
+    "Eccentricity": 0.905552721,
+    "InclinationDegrees": 162.4865754,
+    "ArgumentOfPeriapsisDegrees": 172.5002737,
+    "AscendingNodeDegrees": 235.2709891
+  },
+  {
+    "ObjectName": "66P/du Toit",
+    "PerihelionDistanceKm": 190627596.243756,
+    "AphelionDistanceKm": 1605185152.6109998,
+    "MinimumOrbitIntersectionDistanceKm": 64380640.4387106,
+    "Eccentricity": 0.7877014869,
+    "InclinationDegrees": 18.70073632,
+    "ArgumentOfPeriapsisDegrees": 257.2497193,
+    "AscendingNodeDegrees": 22.21536497
+  },
+  {
+    "ObjectName": "67P/Churyumov-Gerasimenko",
+    "PerihelionDistanceKm": 185986308.54228437,
+    "AphelionDistanceKm": 849715905.5759999,
+    "MinimumOrbitIntersectionDistanceKm": 38474926.7674623,
+    "Eccentricity": 0.6409739314,
+    "InclinationDegrees": 7.040200902,
+    "ArgumentOfPeriapsisDegrees": 12.78560607,
+    "AscendingNodeDegrees": 50.14210951
+  },
+  {
+    "ObjectName": "72P/Denning-Fujikawa",
+    "PerihelionDistanceKm": 117308846.62834512,
+    "AphelionDistanceKm": 1180327199.823,
+    "MinimumOrbitIntersectionDistanceKm": 12753667.270787098,
+    "Eccentricity": 0.8191545266,
+    "InclinationDegrees": 9.16928387,
+    "ArgumentOfPeriapsisDegrees": 337.8580425,
+    "AscendingNodeDegrees": 36.10919646
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3",
+    "PerihelionDistanceKm": 139540524.4241113,
+    "AphelionDistanceKm": 774916970.226,
+    "MinimumOrbitIntersectionDistanceKm": 6761524.5598986,
+    "Eccentricity": 0.6948269106,
+    "InclinationDegrees": 11.4234876,
+    "ArgumentOfPeriapsisDegrees": 198.7699787,
+    "AscendingNodeDegrees": 69.94634151
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-B",
+    "PerihelionDistanceKm": 140489011.44118953,
+    "AphelionDistanceKm": 774916970.226,
+    "MinimumOrbitIntersectionDistanceKm": 6090129.316197,
+    "Eccentricity": 0.6932855208,
+    "InclinationDegrees": 11.39695195,
+    "ArgumentOfPeriapsisDegrees": 198.7994526,
+    "AscendingNodeDegrees": 69.8924768
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-C",
+    "PerihelionDistanceKm": 141049344.40289518,
+    "AphelionDistanceKm": 774916970.226,
+    "MinimumOrbitIntersectionDistanceKm": 5740519.092371099,
+    "Eccentricity": 0.6922258013,
+    "InclinationDegrees": 11.37915706,
+    "ArgumentOfPeriapsisDegrees": 198.8705914,
+    "AscendingNodeDegrees": 69.8432169
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-E",
+    "PerihelionDistanceKm": 140238578.2926076,
+    "AphelionDistanceKm": 776412948.933,
+    "MinimumOrbitIntersectionDistanceKm": 6138449.4284331,
+    "Eccentricity": 0.6938774628,
+    "InclinationDegrees": 11.40562118,
+    "ArgumentOfPeriapsisDegrees": 198.7732444,
+    "AscendingNodeDegrees": 69.91710448
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-G",
+    "PerihelionDistanceKm": 140499916.13861763,
+    "AphelionDistanceKm": 776412948.933,
+    "MinimumOrbitIntersectionDistanceKm": 6064697.678177999,
+    "Eccentricity": 0.6934129712,
+    "InclinationDegrees": 11.38956229,
+    "ArgumentOfPeriapsisDegrees": 198.7746011,
+    "AscendingNodeDegrees": 69.90839961
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-H",
+    "PerihelionDistanceKm": 140497758.69796553,
+    "AphelionDistanceKm": 776412948.933,
+    "MinimumOrbitIntersectionDistanceKm": 6066193.656885,
+    "Eccentricity": 0.6935658067,
+    "InclinationDegrees": 11.3910639,
+    "ArgumentOfPeriapsisDegrees": 198.7738045,
+    "AscendingNodeDegrees": 69.90789141
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-J",
+    "PerihelionDistanceKm": 140475423.16739812,
+    "AphelionDistanceKm": 770429034.105,
+    "MinimumOrbitIntersectionDistanceKm": 6090578.1098091,
+    "Eccentricity": 0.6915388167,
+    "InclinationDegrees": 11.38026546,
+    "ArgumentOfPeriapsisDegrees": 198.8694441,
+    "AscendingNodeDegrees": 69.82886018
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-K",
+    "PerihelionDistanceKm": 140483896.2711163,
+    "AphelionDistanceKm": 776412948.933,
+    "MinimumOrbitIntersectionDistanceKm": 6070531.995135299,
+    "Eccentricity": 0.6935434852,
+    "InclinationDegrees": 11.39106462,
+    "ArgumentOfPeriapsisDegrees": 198.7896439,
+    "AscendingNodeDegrees": 69.8973434
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-L",
+    "PerihelionDistanceKm": 140485773.7991925,
+    "AphelionDistanceKm": 779404906.3469999,
+    "MinimumOrbitIntersectionDistanceKm": 6081751.8354378,
+    "Eccentricity": 0.694735675,
+    "InclinationDegrees": 11.3987128,
+    "ArgumentOfPeriapsisDegrees": 198.7475944,
+    "AscendingNodeDegrees": 69.93678268
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-M",
+    "PerihelionDistanceKm": 140486883.86027244,
+    "AphelionDistanceKm": 777908927.64,
+    "MinimumOrbitIntersectionDistanceKm": 6072027.9738423,
+    "Eccentricity": 0.6939409383,
+    "InclinationDegrees": 11.39436144,
+    "ArgumentOfPeriapsisDegrees": 198.7775561,
+    "AscendingNodeDegrees": 69.90530158
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-N",
+    "PerihelionDistanceKm": 140510452.06233466,
+    "AphelionDistanceKm": 773420991.5189999,
+    "MinimumOrbitIntersectionDistanceKm": 6062752.9058588995,
+    "Eccentricity": 0.6922889938,
+    "InclinationDegrees": 11.38094121,
+    "ArgumentOfPeriapsisDegrees": 198.7643511,
+    "AscendingNodeDegrees": 69.89730281
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-P",
+    "PerihelionDistanceKm": 140496207.50268444,
+    "AphelionDistanceKm": 782396863.761,
+    "MinimumOrbitIntersectionDistanceKm": 6081153.443955,
+    "Eccentricity": 0.6955758994,
+    "InclinationDegrees": 11.40542193,
+    "ArgumentOfPeriapsisDegrees": 198.7241361,
+    "AscendingNodeDegrees": 69.9561999
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-Q",
+    "PerihelionDistanceKm": 140579475.00893715,
+    "AphelionDistanceKm": 792868714.7099999,
+    "MinimumOrbitIntersectionDistanceKm": 6095514.839542199,
+    "Eccentricity": 0.6986472444,
+    "InclinationDegrees": 11.4193581,
+    "ArgumentOfPeriapsisDegrees": 198.4951922,
+    "AscendingNodeDegrees": 70.13788751
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-R",
+    "PerihelionDistanceKm": 140492079.78327632,
+    "AphelionDistanceKm": 777908927.64,
+    "MinimumOrbitIntersectionDistanceKm": 6070681.593005999,
+    "Eccentricity": 0.6940882133,
+    "InclinationDegrees": 11.3947263,
+    "ArgumentOfPeriapsisDegrees": 198.7697021,
+    "AscendingNodeDegrees": 69.91308584
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-S",
+    "PerihelionDistanceKm": 152943863.14364544,
+    "AphelionDistanceKm": 845227969.455,
+    "MinimumOrbitIntersectionDistanceKm": 1100292.3389985,
+    "Eccentricity": 0.6933582332,
+    "InclinationDegrees": 11.04818134,
+    "ArgumentOfPeriapsisDegrees": 181.5621916,
+    "AscendingNodeDegrees": 81.99161507
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-T",
+    "PerihelionDistanceKm": 140520088.81309006,
+    "AphelionDistanceKm": 834756118.5059999,
+    "MinimumOrbitIntersectionDistanceKm": 6225964.1827926,
+    "Eccentricity": 0.7119324141,
+    "InclinationDegrees": 11.51229958,
+    "ArgumentOfPeriapsisDegrees": 198.1833801,
+    "AscendingNodeDegrees": 70.47600442
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-U",
+    "PerihelionDistanceKm": 140530793.0344116,
+    "AphelionDistanceKm": 764445119.277,
+    "MinimumOrbitIntersectionDistanceKm": 6028345.395597899,
+    "Eccentricity": 0.6893974588,
+    "InclinationDegrees": 11.35982065,
+    "ArgumentOfPeriapsisDegrees": 198.8353865,
+    "AscendingNodeDegrees": 69.83271992
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-V",
+    "PerihelionDistanceKm": 136464185.3587568,
+    "AphelionDistanceKm": 753973268.328,
+    "MinimumOrbitIntersectionDistanceKm": 6527852.685865199,
+    "Eccentricity": 0.6934869706,
+    "InclinationDegrees": 11.65182376,
+    "ArgumentOfPeriapsisDegrees": 204.9294792,
+    "AscendingNodeDegrees": 65.24678693
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-W",
+    "PerihelionDistanceKm": 140491105.1980281,
+    "AphelionDistanceKm": 788380778.5889999,
+    "MinimumOrbitIntersectionDistanceKm": 6103443.526689299,
+    "Eccentricity": 0.6975732498,
+    "InclinationDegrees": 11.41831799,
+    "ArgumentOfPeriapsisDegrees": 198.6608054,
+    "AscendingNodeDegrees": 70.01698507
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-X",
+    "PerihelionDistanceKm": 140484772.30128732,
+    "AphelionDistanceKm": 779404906.3469999,
+    "MinimumOrbitIntersectionDistanceKm": 6081303.0418257,
+    "Eccentricity": 0.6947512888,
+    "InclinationDegrees": 11.39938737,
+    "ArgumentOfPeriapsisDegrees": 198.7509795,
+    "AscendingNodeDegrees": 69.92862059
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-Y",
+    "PerihelionDistanceKm": 140497195.0580681,
+    "AphelionDistanceKm": 861683735.2319999,
+    "MinimumOrbitIntersectionDistanceKm": 6304802.2606515,
+    "Eccentricity": 0.7195023037,
+    "InclinationDegrees": 11.56184126,
+    "ArgumentOfPeriapsisDegrees": 197.9700547,
+    "AscendingNodeDegrees": 70.66913935
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-Z",
+    "PerihelionDistanceKm": 140927051.56938916,
+    "AphelionDistanceKm": 777908927.64,
+    "MinimumOrbitIntersectionDistanceKm": 6017275.153166099,
+    "Eccentricity": 0.6933582332,
+    "InclinationDegrees": 11.34947201,
+    "ArgumentOfPeriapsisDegrees": 198.0161463,
+    "AscendingNodeDegrees": 70.49401081
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AA",
+    "PerihelionDistanceKm": 140514966.29776132,
+    "AphelionDistanceKm": 739013481.258,
+    "MinimumOrbitIntersectionDistanceKm": 5959530.375075899,
+    "Eccentricity": 0.6806338789,
+    "InclinationDegrees": 11.29506494,
+    "ArgumentOfPeriapsisDegrees": 199.1079395,
+    "AscendingNodeDegrees": 69.57271647
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AB",
+    "PerihelionDistanceKm": 140497282.94681713,
+    "AphelionDistanceKm": 768933055.3979999,
+    "MinimumOrbitIntersectionDistanceKm": 6075917.518480499,
+    "Eccentricity": 0.6912468087,
+    "InclinationDegrees": 11.37319386,
+    "ArgumentOfPeriapsisDegrees": 198.8169658,
+    "AscendingNodeDegrees": 69.85894301
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AC",
+    "PerihelionDistanceKm": 140479170.38462213,
+    "AphelionDistanceKm": 782396863.761,
+    "MinimumOrbitIntersectionDistanceKm": 6104640.3096549,
+    "Eccentricity": 0.6953671146,
+    "InclinationDegrees": 11.40528019,
+    "ArgumentOfPeriapsisDegrees": 198.7526383,
+    "AscendingNodeDegrees": 69.93380114
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AD",
+    "PerihelionDistanceKm": 140727817.9330194,
+    "AphelionDistanceKm": 776412948.933,
+    "MinimumOrbitIntersectionDistanceKm": 6040163.6273831995,
+    "Eccentricity": 0.6933582332,
+    "InclinationDegrees": 11.36836584,
+    "ArgumentOfPeriapsisDegrees": 198.3713234,
+    "AscendingNodeDegrees": 70.21921728
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AE",
+    "PerihelionDistanceKm": 140480057.15592027,
+    "AphelionDistanceKm": 785388821.175,
+    "MinimumOrbitIntersectionDistanceKm": 6096562.024637099,
+    "Eccentricity": 0.6967256567,
+    "InclinationDegrees": 11.41469069,
+    "ArgumentOfPeriapsisDegrees": 198.7081423,
+    "AscendingNodeDegrees": 69.9723223
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AF",
+    "PerihelionDistanceKm": 140799258.81504622,
+    "AphelionDistanceKm": 728541630.309,
+    "MinimumOrbitIntersectionDistanceKm": 5898344.845959599,
+    "Eccentricity": 0.6762990182,
+    "InclinationDegrees": 11.23973276,
+    "ArgumentOfPeriapsisDegrees": 198.7163903,
+    "AscendingNodeDegrees": 69.8497135
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AG",
+    "PerihelionDistanceKm": 140478271.54077584,
+    "AphelionDistanceKm": 782396863.761,
+    "MinimumOrbitIntersectionDistanceKm": 6100451.5692753,
+    "Eccentricity": 0.6957811465,
+    "InclinationDegrees": 11.40758964,
+    "ArgumentOfPeriapsisDegrees": 198.7052943,
+    "AscendingNodeDegrees": 69.95896614
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AH",
+    "PerihelionDistanceKm": 141068789.6577213,
+    "AphelionDistanceKm": 779404906.3469999,
+    "MinimumOrbitIntersectionDistanceKm": 6006952.9000878,
+    "Eccentricity": 0.6933582332,
+    "InclinationDegrees": 11.33063244,
+    "ArgumentOfPeriapsisDegrees": 197.7396254,
+    "AscendingNodeDegrees": 70.70742061
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AI",
+    "PerihelionDistanceKm": 140455656.45666742,
+    "AphelionDistanceKm": 789876757.296,
+    "MinimumOrbitIntersectionDistanceKm": 6090129.316197,
+    "Eccentricity": 0.6982511274,
+    "InclinationDegrees": 11.43065377,
+    "ArgumentOfPeriapsisDegrees": 198.7294365,
+    "AscendingNodeDegrees": 69.97109124
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AJ",
+    "PerihelionDistanceKm": 140035590.21343666,
+    "AphelionDistanceKm": 1261110050.001,
+    "MinimumOrbitIntersectionDistanceKm": 6972457.557585599,
+    "Eccentricity": 0.8001952857,
+    "InclinationDegrees": 12.14931754,
+    "ArgumentOfPeriapsisDegrees": 196.7656541,
+    "AscendingNodeDegrees": 72.0622749
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AK",
+    "PerihelionDistanceKm": 140278702.95477358,
+    "AphelionDistanceKm": 774916970.226,
+    "MinimumOrbitIntersectionDistanceKm": 6031636.5487533,
+    "Eccentricity": 0.6933582332,
+    "InclinationDegrees": 11.42949727,
+    "ArgumentOfPeriapsisDegrees": 199.3256981,
+    "AscendingNodeDegrees": 69.37619102
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AL",
+    "PerihelionDistanceKm": 140437781.23149428,
+    "AphelionDistanceKm": 795860672.124,
+    "MinimumOrbitIntersectionDistanceKm": 6117356.1286643995,
+    "Eccentricity": 0.6998428235,
+    "InclinationDegrees": 11.44393328,
+    "ArgumentOfPeriapsisDegrees": 198.7225549,
+    "AscendingNodeDegrees": 69.97977383
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AM",
+    "PerihelionDistanceKm": 139266217.44501734,
+    "AphelionDistanceKm": 768933055.3979999,
+    "MinimumOrbitIntersectionDistanceKm": 6121544.869043999,
+    "Eccentricity": 0.6933582332,
+    "InclinationDegrees": 11.54419805,
+    "ArgumentOfPeriapsisDegrees": 201.0885964,
+    "AscendingNodeDegrees": 68.11933346
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AN",
+    "PerihelionDistanceKm": 140472000.21851864,
+    "AphelionDistanceKm": 779404906.3469999,
+    "MinimumOrbitIntersectionDistanceKm": 6073823.148290699,
+    "Eccentricity": 0.6947569553,
+    "InclinationDegrees": 11.40514157,
+    "ArgumentOfPeriapsisDegrees": 198.8011953,
+    "AscendingNodeDegrees": 69.89155967
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AO",
+    "PerihelionDistanceKm": 140734221.1407594,
+    "AphelionDistanceKm": 777908927.64,
+    "MinimumOrbitIntersectionDistanceKm": 6095664.437412899,
+    "Eccentricity": 0.6937687739,
+    "InclinationDegrees": 11.32588494,
+    "ArgumentOfPeriapsisDegrees": 198.1671916,
+    "AscendingNodeDegrees": 70.388797
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AP",
+    "PerihelionDistanceKm": 140434317.24791887,
+    "AphelionDistanceKm": 800348608.2449999,
+    "MinimumOrbitIntersectionDistanceKm": 6132914.307217199,
+    "Eccentricity": 0.7014300924,
+    "InclinationDegrees": 11.46590929,
+    "ArgumentOfPeriapsisDegrees": 198.7426205,
+    "AscendingNodeDegrees": 69.9669785
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AQ",
+    "PerihelionDistanceKm": 140473363.47399476,
+    "AphelionDistanceKm": 783892842.4679999,
+    "MinimumOrbitIntersectionDistanceKm": 6102097.145853,
+    "Eccentricity": 0.6959119088,
+    "InclinationDegrees": 11.41369562,
+    "ArgumentOfPeriapsisDegrees": 198.7713164,
+    "AscendingNodeDegrees": 69.92072504
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AR",
+    "PerihelionDistanceKm": 140503032.30714366,
+    "AphelionDistanceKm": 783892842.4679999,
+    "MinimumOrbitIntersectionDistanceKm": 6080854.248213599,
+    "Eccentricity": 0.695799013,
+    "InclinationDegrees": 11.40652255,
+    "ArgumentOfPeriapsisDegrees": 198.7098466,
+    "AscendingNodeDegrees": 69.96630168
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AS",
+    "PerihelionDistanceKm": 140446572.51492363,
+    "AphelionDistanceKm": 798852629.5379999,
+    "MinimumOrbitIntersectionDistanceKm": 6149818.8666063,
+    "Eccentricity": 0.7009701053,
+    "InclinationDegrees": 11.46096714,
+    "ArgumentOfPeriapsisDegrees": 198.7247614,
+    "AscendingNodeDegrees": 69.97402026
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AT",
+    "PerihelionDistanceKm": 140566466.2922566,
+    "AphelionDistanceKm": 756965225.7419999,
+    "MinimumOrbitIntersectionDistanceKm": 6015031.185105599,
+    "Eccentricity": 0.6869322275,
+    "InclinationDegrees": 11.33462061,
+    "ArgumentOfPeriapsisDegrees": 198.8104065,
+    "AscendingNodeDegrees": 69.84813048
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AU",
+    "PerihelionDistanceKm": 140516974.5893363,
+    "AphelionDistanceKm": 774916970.226,
+    "MinimumOrbitIntersectionDistanceKm": 6058564.1654793,
+    "Eccentricity": 0.6928223535,
+    "InclinationDegrees": 11.38220585,
+    "ArgumentOfPeriapsisDegrees": 198.7583062,
+    "AscendingNodeDegrees": 69.91454526
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AV",
+    "PerihelionDistanceKm": 140476033.9605444,
+    "AphelionDistanceKm": 776412948.933,
+    "MinimumOrbitIntersectionDistanceKm": 6062603.307988199,
+    "Eccentricity": 0.6933582332,
+    "InclinationDegrees": 11.3951153,
+    "ArgumentOfPeriapsisDegrees": 198.8335456,
+    "AscendingNodeDegrees": 69.88524741
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AW",
+    "PerihelionDistanceKm": 140660558.2665993,
+    "AphelionDistanceKm": 731533587.7229999,
+    "MinimumOrbitIntersectionDistanceKm": 5952648.8730237,
+    "Eccentricity": 0.6773014639,
+    "InclinationDegrees": 11.23959642,
+    "ArgumentOfPeriapsisDegrees": 198.8339738,
+    "AscendingNodeDegrees": 69.79453062
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AX",
+    "PerihelionDistanceKm": 140324229.82044733,
+    "AphelionDistanceKm": 771925012.8119999,
+    "MinimumOrbitIntersectionDistanceKm": 6030140.570046299,
+    "Eccentricity": 0.6924701264,
+    "InclinationDegrees": 11.42778528,
+    "ArgumentOfPeriapsisDegrees": 199.2512703,
+    "AscendingNodeDegrees": 69.46695211
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AY",
+    "PerihelionDistanceKm": 140650931.2097859,
+    "AphelionDistanceKm": 725549672.8949999,
+    "MinimumOrbitIntersectionDistanceKm": 5933500.345574099,
+    "Eccentricity": 0.675089956,
+    "InclinationDegrees": 11.22586964,
+    "ArgumentOfPeriapsisDegrees": 198.9220318,
+    "AscendingNodeDegrees": 69.71151968
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-AZ",
+    "PerihelionDistanceKm": 140669537.31031615,
+    "AphelionDistanceKm": 725549672.8949999,
+    "MinimumOrbitIntersectionDistanceKm": 5938586.6731779,
+    "Eccentricity": 0.6750699862,
+    "InclinationDegrees": 11.22070941,
+    "ArgumentOfPeriapsisDegrees": 198.8670389,
+    "AscendingNodeDegrees": 69.76425986
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BA",
+    "PerihelionDistanceKm": 140659067.34430033,
+    "AphelionDistanceKm": 744997396.086,
+    "MinimumOrbitIntersectionDistanceKm": 5991843.515147099,
+    "Eccentricity": 0.6824329214,
+    "InclinationDegrees": 11.27075096,
+    "ArgumentOfPeriapsisDegrees": 198.6920226,
+    "AscendingNodeDegrees": 69.9209975
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BB",
+    "PerihelionDistanceKm": 140984110.72547814,
+    "AphelionDistanceKm": 746493374.793,
+    "MinimumOrbitIntersectionDistanceKm": 6005307.323510099,
+    "Eccentricity": 0.6824329214,
+    "InclinationDegrees": 11.19018461,
+    "ArgumentOfPeriapsisDegrees": 197.928567,
+    "AscendingNodeDegrees": 70.47094006
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BC",
+    "PerihelionDistanceKm": 140443588.77043274,
+    "AphelionDistanceKm": 797356650.831,
+    "MinimumOrbitIntersectionDistanceKm": 6126631.1966478,
+    "Eccentricity": 0.7004675151,
+    "InclinationDegrees": 11.45870615,
+    "ArgumentOfPeriapsisDegrees": 198.7461327,
+    "AscendingNodeDegrees": 69.95554651
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BD",
+    "PerihelionDistanceKm": 141542860.65747583,
+    "AphelionDistanceKm": 749485332.2069999,
+    "MinimumOrbitIntersectionDistanceKm": 6042108.399702299,
+    "Eccentricity": 0.6824392137,
+    "InclinationDegrees": 10.97454826,
+    "ArgumentOfPeriapsisDegrees": 196.463131,
+    "AscendingNodeDegrees": 71.41848297
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BE",
+    "PerihelionDistanceKm": 140535432.2887788,
+    "AphelionDistanceKm": 744997396.086,
+    "MinimumOrbitIntersectionDistanceKm": 5981371.6641981,
+    "Eccentricity": 0.6824392137,
+    "InclinationDegrees": 11.3165548,
+    "ArgumentOfPeriapsisDegrees": 199.0041337,
+    "AscendingNodeDegrees": 69.69353535
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BF",
+    "PerihelionDistanceKm": 140558313.73189598,
+    "AphelionDistanceKm": 753973268.328,
+    "MinimumOrbitIntersectionDistanceKm": 6043305.1826679,
+    "Eccentricity": 0.6856738995,
+    "InclinationDegrees": 11.32197626,
+    "ArgumentOfPeriapsisDegrees": 198.8097995,
+    "AscendingNodeDegrees": 69.83455705
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BG",
+    "PerihelionDistanceKm": 140523538.285672,
+    "AphelionDistanceKm": 750981310.9139999,
+    "MinimumOrbitIntersectionDistanceKm": 5999921.800164899,
+    "Eccentricity": 0.6847548055,
+    "InclinationDegrees": 11.32450054,
+    "ArgumentOfPeriapsisDegrees": 198.9548257,
+    "AscendingNodeDegrees": 69.72079452
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BH",
+    "PerihelionDistanceKm": 140594509.3705457,
+    "AphelionDistanceKm": 744997396.086,
+    "MinimumOrbitIntersectionDistanceKm": 5990945.9279229,
+    "Eccentricity": 0.6824392137,
+    "InclinationDegrees": 11.28940623,
+    "ArgumentOfPeriapsisDegrees": 198.8380688,
+    "AscendingNodeDegrees": 69.80392621
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BI",
+    "PerihelionDistanceKm": 140586857.5292181,
+    "AphelionDistanceKm": 744997396.086,
+    "MinimumOrbitIntersectionDistanceKm": 5993189.8959834,
+    "Eccentricity": 0.6824626795,
+    "InclinationDegrees": 11.30045753,
+    "ArgumentOfPeriapsisDegrees": 198.9127974,
+    "AscendingNodeDegrees": 69.75258615
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BJ",
+    "PerihelionDistanceKm": 140510237.00043574,
+    "AphelionDistanceKm": 768933055.3979999,
+    "MinimumOrbitIntersectionDistanceKm": 6052879.446392699,
+    "Eccentricity": 0.6910944882,
+    "InclinationDegrees": 11.37022892,
+    "ArgumentOfPeriapsisDegrees": 198.7979116,
+    "AscendingNodeDegrees": 69.87876452
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BK",
+    "PerihelionDistanceKm": 140512288.7202726,
+    "AphelionDistanceKm": 770429034.105,
+    "MinimumOrbitIntersectionDistanceKm": 6057816.1761258,
+    "Eccentricity": 0.6915428054,
+    "InclinationDegrees": 11.37077721,
+    "ArgumentOfPeriapsisDegrees": 198.775388,
+    "AscendingNodeDegrees": 69.89745388
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BL",
+    "PerihelionDistanceKm": 140487309.73549077,
+    "AphelionDistanceKm": 783892842.4679999,
+    "MinimumOrbitIntersectionDistanceKm": 6094916.4480594,
+    "Eccentricity": 0.6962237189,
+    "InclinationDegrees": 11.4093615,
+    "ArgumentOfPeriapsisDegrees": 198.6994292,
+    "AscendingNodeDegrees": 69.97335799
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BM",
+    "PerihelionDistanceKm": 140585625.6655518,
+    "AphelionDistanceKm": 744997396.086,
+    "MinimumOrbitIntersectionDistanceKm": 5990048.3406986995,
+    "Eccentricity": 0.6824392137,
+    "InclinationDegrees": 11.29433257,
+    "ArgumentOfPeriapsisDegrees": 198.861349,
+    "AscendingNodeDegrees": 69.7755882
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BN",
+    "PerihelionDistanceKm": 140500187.583954,
+    "AphelionDistanceKm": 770429034.105,
+    "MinimumOrbitIntersectionDistanceKm": 6081003.8460842995,
+    "Eccentricity": 0.6917715065,
+    "InclinationDegrees": 11.37744926,
+    "ArgumentOfPeriapsisDegrees": 198.7947706,
+    "AscendingNodeDegrees": 69.88153448
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BO",
+    "PerihelionDistanceKm": 140505172.82827657,
+    "AphelionDistanceKm": 771925012.8119999,
+    "MinimumOrbitIntersectionDistanceKm": 6085192.586463899,
+    "Eccentricity": 0.6918275631,
+    "InclinationDegrees": 11.37615727,
+    "ArgumentOfPeriapsisDegrees": 198.7715536,
+    "AscendingNodeDegrees": 69.89197757
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BP",
+    "PerihelionDistanceKm": 140589575.76740807,
+    "AphelionDistanceKm": 744997396.086,
+    "MinimumOrbitIntersectionDistanceKm": 6011740.031950199,
+    "Eccentricity": 0.6824534537,
+    "InclinationDegrees": 11.29077484,
+    "ArgumentOfPeriapsisDegrees": 198.8488389,
+    "AscendingNodeDegrees": 69.81061093
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BQ",
+    "PerihelionDistanceKm": 140495687.5154457,
+    "AphelionDistanceKm": 773420991.5189999,
+    "MinimumOrbitIntersectionDistanceKm": 6075468.7248684,
+    "Eccentricity": 0.6924538802,
+    "InclinationDegrees": 11.38826125,
+    "ArgumentOfPeriapsisDegrees": 198.8198463,
+    "AscendingNodeDegrees": 69.86577521
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BR",
+    "PerihelionDistanceKm": 140562426.52143663,
+    "AphelionDistanceKm": 752477289.6209999,
+    "MinimumOrbitIntersectionDistanceKm": 6030738.961529099,
+    "Eccentricity": 0.6851541342,
+    "InclinationDegrees": 11.31924783,
+    "ArgumentOfPeriapsisDegrees": 198.8412924,
+    "AscendingNodeDegrees": 69.82671175
+  },
+  {
+    "ObjectName": "73P/Schwassmann-Wachmann 3-BS",
+    "PerihelionDistanceKm": 140464721.99787313,
+    "AphelionDistanceKm": 791372736.0029999,
+    "MinimumOrbitIntersectionDistanceKm": 6107183.473456799,
+    "Eccentricity": 0.6985735462,
+    "InclinationDegrees": 11.44446449,
+    "ArgumentOfPeriapsisDegrees": 198.7685232,
+    "AscendingNodeDegrees": 69.93999714
+  },
+  {
+    "ObjectName": "79P/du Toit-Hartley",
+    "PerihelionDistanceKm": 168118883.10292998,
+    "AphelionDistanceKm": 713581843.2389998,
+    "MinimumOrbitIntersectionDistanceKm": 20162651.4150753,
+    "Eccentricity": 0.61851349,
+    "InclinationDegrees": 3.145618792,
+    "ArgumentOfPeriapsisDegrees": 281.6893173,
+    "AscendingNodeDegrees": 280.6403369
+  },
+  {
+    "ObjectName": "85P/Boethin",
+    "PerihelionDistanceKm": 169742338.79308742,
+    "AphelionDistanceKm": 1382284325.268,
+    "MinimumOrbitIntersectionDistanceKm": 22424571.220059298,
+    "Eccentricity": 0.7811606262,
+    "InclinationDegrees": 4.295294591,
+    "ArgumentOfPeriapsisDegrees": 37.61838461,
+    "AscendingNodeDegrees": 359.3961137
+  },
+  {
+    "ObjectName": "96P/Machholz 1",
+    "PerihelionDistanceKm": 18512564.925327092,
+    "AphelionDistanceKm": 888611351.958,
+    "MinimumOrbitIntersectionDistanceKm": 49925446.9865817,
+    "Eccentricity": 0.9592118287,
+    "InclinationDegrees": 58.31221424,
+    "ArgumentOfPeriapsisDegrees": 14.7577484,
+    "AscendingNodeDegrees": 94.32323631
+  },
+  {
+    "ObjectName": "103P/Hartley 2",
+    "PerihelionDistanceKm": 159201329.0476586,
+    "AphelionDistanceKm": 881131458.4229999,
+    "MinimumOrbitIntersectionDistanceKm": 10771794.6797535,
+    "Eccentricity": 0.693780472,
+    "InclinationDegrees": 13.60427243,
+    "ArgumentOfPeriapsisDegrees": 181.3222858,
+    "AscendingNodeDegrees": 219.7487451
+  },
+  {
+    "ObjectName": "104P/Kowal 2",
+    "PerihelionDistanceKm": 176339756.28400257,
+    "AphelionDistanceKm": 798852629.5379999,
+    "MinimumOrbitIntersectionDistanceKm": 30248240.661927897,
+    "Eccentricity": 0.6385203614,
+    "InclinationDegrees": 10.25097305,
+    "ArgumentOfPeriapsisDegrees": 200.6509533,
+    "AscendingNodeDegrees": 235.4414959
+  },
+  {
+    "ObjectName": "109P/Swift-Tuttle",
+    "PerihelionDistanceKm": 143541573.70521092,
+    "AphelionDistanceKm": 7662402937.253999,
+    "MinimumOrbitIntersectionDistanceKm": 133441.30066439998,
+    "Eccentricity": 0.963225755,
+    "InclinationDegrees": 113.453817,
+    "ArgumentOfPeriapsisDegrees": 152.9821676,
+    "AscendingNodeDegrees": 139.3811921
+  },
+  {
+    "ObjectName": "122P/de Vico",
+    "PerihelionDistanceKm": 98635461.52365066,
+    "AphelionDistanceKm": 5191046113.29,
+    "MinimumOrbitIntersectionDistanceKm": 47395148.6015619,
+    "Eccentricity": 0.9627088868,
+    "InclinationDegrees": 85.38275311,
+    "ArgumentOfPeriapsisDegrees": 12.99609194,
+    "AscendingNodeDegrees": 79.62450069
+  },
+  {
+    "ObjectName": "141P/Machholz 2-A",
+    "PerihelionDistanceKm": 112624738.76539391,
+    "AphelionDistanceKm": 788380778.5889999,
+    "MinimumOrbitIntersectionDistanceKm": 15781378.5758844,
+    "Eccentricity": 0.7501239591,
+    "InclinationDegrees": 12.79506334,
+    "ArgumentOfPeriapsisDegrees": 149.2844343,
+    "AscendingNodeDegrees": 246.1615904
+  },
+  {
+    "ObjectName": "141P/Machholz 2-D",
+    "PerihelionDistanceKm": 112049656.88977683,
+    "AphelionDistanceKm": 788380778.5889999,
+    "MinimumOrbitIntersectionDistanceKm": 16128744.831649797,
+    "Eccentricity": 0.7510624112,
+    "InclinationDegrees": 12.81184124,
+    "ArgumentOfPeriapsisDegrees": 149.2918108,
+    "AscendingNodeDegrees": 246.1336343
+  },
+  {
+    "ObjectName": "161P/Hartley-IRAS",
+    "PerihelionDistanceKm": 190502923.62228268,
+    "AphelionDistanceKm": 2119801827.8189998,
+    "MinimumOrbitIntersectionDistanceKm": 66984391.378244095,
+    "Eccentricity": 0.8350738463,
+    "InclinationDegrees": 95.69806815,
+    "ArgumentOfPeriapsisDegrees": 47.13845023,
+    "AscendingNodeDegrees": 1.415670065
+  },
+  {
+    "ObjectName": "162P/Siding Spring",
+    "PerihelionDistanceKm": 183659664.17135692,
+    "AphelionDistanceKm": 728541630.309,
+    "MinimumOrbitIntersectionDistanceKm": 34734082.4127381,
+    "Eccentricity": 0.5972436348,
+    "InclinationDegrees": 27.84477766,
+    "ArgumentOfPeriapsisDegrees": 356.3636966,
+    "AscendingNodeDegrees": 31.25192352
+  },
+  {
+    "ObjectName": "169P/NEAT",
+    "PerihelionDistanceKm": 90803027.95036624,
+    "AphelionDistanceKm": 688150205.2199999,
+    "MinimumOrbitIntersectionDistanceKm": 21339238.668130796,
+    "Eccentricity": 0.7669277193,
+    "InclinationDegrees": 11.30444069,
+    "ArgumentOfPeriapsisDegrees": 217.9760878,
+    "AscendingNodeDegrees": 176.2204118
+  },
+  {
+    "ObjectName": "177P/Barnard",
+    "PerihelionDistanceKm": 165652663.6194437,
+    "AphelionDistanceKm": 7116370709.198999,
+    "MinimumOrbitIntersectionDistanceKm": 46379827.85312099,
+    "Eccentricity": 0.9545011069,
+    "InclinationDegrees": 31.1792882,
+    "ArgumentOfPeriapsisDegrees": 60.34965167,
+    "AscendingNodeDegrees": 272.1861491
+  },
+  {
+    "ObjectName": "181P/Shoemaker-Levy 6",
+    "PerihelionDistanceKm": 168087126.46693778,
+    "AphelionDistanceKm": 979866053.0849999,
+    "MinimumOrbitIntersectionDistanceKm": 23390375.0732985,
+    "Eccentricity": 0.7073228279,
+    "InclinationDegrees": 16.98117917,
+    "ArgumentOfPeriapsisDegrees": 333.7988486,
+    "AscendingNodeDegrees": 37.67945772
+  },
+  {
+    "ObjectName": "182P/LONEOS",
+    "PerihelionDistanceKm": 146310077.3930976,
+    "AphelionDistanceKm": 730037609.0159999,
+    "MinimumOrbitIntersectionDistanceKm": 16360920.7269762,
+    "Eccentricity": 0.66634233,
+    "InclinationDegrees": 16.90929665,
+    "ArgumentOfPeriapsisDegrees": 51.43384257,
+    "AscendingNodeDegrees": 75.10006349
+  },
+  {
+    "ObjectName": "185P/Petriew",
+    "PerihelionDistanceKm": 139427360.09755477,
+    "AphelionDistanceKm": 788380778.5889999,
+    "MinimumOrbitIntersectionDistanceKm": 9100487.2682931,
+    "Eccentricity": 0.6993210375,
+    "InclinationDegrees": 14.00701804,
+    "ArgumentOfPeriapsisDegrees": 181.9403336,
+    "AscendingNodeDegrees": 214.0910177
+  },
+  {
+    "ObjectName": "189P/NEAT",
+    "PerihelionDistanceKm": 176160879.41724494,
+    "AphelionDistanceKm": 697126077.462,
+    "MinimumOrbitIntersectionDistanceKm": 25476816.5759514,
+    "Eccentricity": 0.5967955467,
+    "InclinationDegrees": 20.3759014,
+    "ArgumentOfPeriapsisDegrees": 15.39713787,
+    "AscendingNodeDegrees": 282.144161
+  },
+  {
+    "ObjectName": "197P/LINEAR",
+    "PerihelionDistanceKm": 158782191.26865253,
+    "AphelionDistanceKm": 698622056.1689999,
+    "MinimumOrbitIntersectionDistanceKm": 7677063.5285826,
+    "Eccentricity": 0.6296602372,
+    "InclinationDegrees": 25.54272525,
+    "ArgumentOfPeriapsisDegrees": 188.7289004,
+    "AscendingNodeDegrees": 66.38824615
+  },
+  {
+    "ObjectName": "206P/Barnard-Boattini",
+    "PerihelionDistanceKm": 146428210.94204476,
+    "AphelionDistanceKm": 794364693.4169999,
+    "MinimumOrbitIntersectionDistanceKm": 2751104.842173,
+    "Eccentricity": 0.6886420879,
+    "InclinationDegrees": 31.97414822,
+    "ArgumentOfPeriapsisDegrees": 179.5749493,
+    "AscendingNodeDegrees": 205.2603247
+  },
+  {
+    "ObjectName": "207P/NEAT",
+    "PerihelionDistanceKm": 141219820.87049985,
+    "AphelionDistanceKm": 1021753456.8809999,
+    "MinimumOrbitIntersectionDistanceKm": 22078401.747259498,
+    "Eccentricity": 0.7569889079,
+    "InclinationDegrees": 10.14995411,
+    "ArgumentOfPeriapsisDegrees": 271.195627,
+    "AscendingNodeDegrees": 200.6742212
+  },
+  {
+    "ObjectName": "209P/LINEAR",
+    "PerihelionDistanceKm": 134887735.83281752,
+    "AphelionDistanceKm": 742005438.6719999,
+    "MinimumOrbitIntersectionDistanceKm": 7657316.609650199,
+    "Eccentricity": 0.6923704602,
+    "InclinationDegrees": 19.44782985,
+    "ArgumentOfPeriapsisDegrees": 150.4693054,
+    "AscendingNodeDegrees": 65.46431318
+  },
+  {
+    "ObjectName": "210P/Christensen",
+    "PerihelionDistanceKm": 79483430.08800462,
+    "AphelionDistanceKm": 869163628.7669998,
+    "MinimumOrbitIntersectionDistanceKm": 25542041.247576598,
+    "Eccentricity": 0.8325032627,
+    "InclinationDegrees": 10.24010578,
+    "ArgumentOfPeriapsisDegrees": 345.8255534,
+    "AscendingNodeDegrees": 93.82650012
+  },
+  {
+    "ObjectName": "217P/LINEAR",
+    "PerihelionDistanceKm": 183030337.04567912,
+    "AphelionDistanceKm": 996321818.862,
+    "MinimumOrbitIntersectionDistanceKm": 45842322.7036959,
+    "Eccentricity": 0.689642756,
+    "InclinationDegrees": 12.88188017,
+    "ArgumentOfPeriapsisDegrees": 246.7754682,
+    "AscendingNodeDegrees": 125.6220203
+  },
+  {
+    "ObjectName": "222P/LINEAR",
+    "PerihelionDistanceKm": 116800257.1615889,
+    "AphelionDistanceKm": 737517502.5509999,
+    "MinimumOrbitIntersectionDistanceKm": 9317703.3765495,
+    "Eccentricity": 0.7267693964,
+    "InclinationDegrees": 5.14614339,
+    "ArgumentOfPeriapsisDegrees": 345.4248856,
+    "AscendingNodeDegrees": 7.132384188
+  },
+  {
+    "ObjectName": "225P/LINEAR",
+    "PerihelionDistanceKm": 178330463.07809466,
+    "AphelionDistanceKm": 882627437.13,
+    "MinimumOrbitIntersectionDistanceKm": 29169041.622698095,
+    "Eccentricity": 0.6637644633,
+    "InclinationDegrees": 20.70960946,
+    "ArgumentOfPeriapsisDegrees": 1.329461349,
+    "AscendingNodeDegrees": 15.49778451
+  },
+  {
+    "ObjectName": "249P/LINEAR",
+    "PerihelionDistanceKm": 76382514.1868643,
+    "AphelionDistanceKm": 753973268.328,
+    "MinimumOrbitIntersectionDistanceKm": 7876178.2944843,
+    "Eccentricity": 0.8161483931,
+    "InclinationDegrees": 8.4340952,
+    "ArgumentOfPeriapsisDegrees": 64.04057029,
+    "AscendingNodeDegrees": 240.6460863
+  },
+  {
+    "ObjectName": "252P/LINEAR",
+    "PerihelionDistanceKm": 149802585.06379986,
+    "AphelionDistanceKm": 764445119.277,
+    "MinimumOrbitIntersectionDistanceKm": 2601357.3736023,
+    "Eccentricity": 0.6724112481,
+    "InclinationDegrees": 10.38105211,
+    "ArgumentOfPeriapsisDegrees": 343.2826819,
+    "AscendingNodeDegrees": 190.9962851
+  },
+  {
+    "ObjectName": "255P/Levy",
+    "PerihelionDistanceKm": 150821228.23135114,
+    "AphelionDistanceKm": 758461204.449,
+    "MinimumOrbitIntersectionDistanceKm": 3667690.9959519,
+    "Eccentricity": 0.6681889017,
+    "InclinationDegrees": 18.26659348,
+    "ArgumentOfPeriapsisDegrees": 179.6923294,
+    "AscendingNodeDegrees": 279.7300367
+  },
+  {
+    "ObjectName": "262P/McNaught-Russell",
+    "PerihelionDistanceKm": 191526650.7238718,
+    "AphelionDistanceKm": 1883437192.113,
+    "MinimumOrbitIntersectionDistanceKm": 43601197.0027392,
+    "Eccentricity": 0.8154028826,
+    "InclinationDegrees": 29.07941912,
+    "ArgumentOfPeriapsisDegrees": 171.1690206,
+    "AscendingNodeDegrees": 218.0142884
+  },
+  {
+    "ObjectName": "263P/Gibbs",
+    "PerihelionDistanceKm": 187192126.17208955,
+    "AphelionDistanceKm": 719565758.0669999,
+    "MinimumOrbitIntersectionDistanceKm": 42545335.2313386,
+    "Eccentricity": 0.5869803961,
+    "InclinationDegrees": 14.4711765,
+    "ArgumentOfPeriapsisDegrees": 26.31548584,
+    "AscendingNodeDegrees": 113.3508576
+  },
+  {
+    "ObjectName": "273P/Pons-Gambart",
+    "PerihelionDistanceKm": 121238759.08509012,
+    "AphelionDistanceKm": 9614655149.888998,
+    "MinimumOrbitIntersectionDistanceKm": 25695678.260785498,
+    "Eccentricity": 0.9750961432,
+    "InclinationDegrees": 136.3989719,
+    "ArgumentOfPeriapsisDegrees": 20.18419247,
+    "AscendingNodeDegrees": 320.4310688
+  },
+  {
+    "ObjectName": "289P/Blanpain",
+    "PerihelionDistanceKm": 149400817.27307823,
+    "AphelionDistanceKm": 771925012.8119999,
+    "MinimumOrbitIntersectionDistanceKm": 2462680.1474634,
+    "Eccentricity": 0.6757685739,
+    "InclinationDegrees": 5.931685399,
+    "ArgumentOfPeriapsisDegrees": 9.066912825,
+    "AscendingNodeDegrees": 69.33306667
+  },
+  {
+    "ObjectName": "294P/LINEAR",
+    "PerihelionDistanceKm": 194138340.22401187,
+    "AphelionDistanceKm": 762949140.5699999,
+    "MinimumOrbitIntersectionDistanceKm": 58883816.2777098,
+    "Eccentricity": 0.5945159337,
+    "InclinationDegrees": 19.0857983,
+    "ArgumentOfPeriapsisDegrees": 233.2695182,
+    "AscendingNodeDegrees": 315.4433207
+  },
+  {
+    "ObjectName": "300P/Catalina",
+    "PerihelionDistanceKm": 123564816.07493806,
+    "AphelionDistanceKm": 682166290.3919998,
+    "MinimumOrbitIntersectionDistanceKm": 3658266.3300977997,
+    "Eccentricity": 0.693462168,
+    "InclinationDegrees": 5.691470921,
+    "ArgumentOfPeriapsisDegrees": 222.7484631,
+    "AscendingNodeDegrees": 95.8066034
+  },
+  {
+    "ObjectName": "306P/LINEAR",
+    "PerihelionDistanceKm": 186536357.62276554,
+    "AphelionDistanceKm": 742005438.6719999,
+    "MinimumOrbitIntersectionDistanceKm": 35785007.4544056,
+    "Eccentricity": 0.5982594907,
+    "InclinationDegrees": 8.364457777,
+    "ArgumentOfPeriapsisDegrees": 0.7688016312,
+    "AscendingNodeDegrees": 341.4986017
+  },
+  {
+    "ObjectName": "317P/WISE",
+    "PerihelionDistanceKm": 179276664.2247488,
+    "AphelionDistanceKm": 695630098.755,
+    "MinimumOrbitIntersectionDistanceKm": 30496124.3336778,
+    "Eccentricity": 0.5904467346,
+    "InclinationDegrees": 10.64556918,
+    "ArgumentOfPeriapsisDegrees": 328.7279634,
+    "AscendingNodeDegrees": 280.9856039
+  },
+  {
+    "ObjectName": "C/1906 V1 (Thiele)",
+    "PerihelionDistanceKm": 180805612.2080809,
+    "AphelionDistanceKm": 6877014116.0789995,
+    "MinimumOrbitIntersectionDistanceKm": 34451791.230727196,
+    "Eccentricity": 0.9487613645,
+    "InclinationDegrees": 56.03318114,
+    "ArgumentOfPeriapsisDegrees": 8.456068198,
+    "AscendingNodeDegrees": 85.80950568
+  },
+  {
+    "ObjectName": "C/1921 H1 (Dubiago)",
+    "PerihelionDistanceKm": 164310674.2286381,
+    "AphelionDistanceKm": 1994139616.4309998,
+    "MinimumOrbitIntersectionDistanceKm": 54980807.8311468,
+    "Eccentricity": 0.8477830042,
+    "InclinationDegrees": 22.07043089,
+    "ArgumentOfPeriapsisDegrees": 96.44867266,
+    "AscendingNodeDegrees": 68.21958086
+  },
+  {
+    "ObjectName": "D/1978 R1 (Haneda-Campos)",
+    "PerihelionDistanceKm": 164769743.41928074,
+    "AphelionDistanceKm": 819796331.436,
+    "MinimumOrbitIntersectionDistanceKm": 20183744.714844,
+    "Eccentricity": 0.6652319399,
+    "InclinationDegrees": 5.947329619,
+    "ArgumentOfPeriapsisDegrees": 240.4622187,
+    "AscendingNodeDegrees": 132.2535138
+  },
+  {
+    "ObjectName": "C/1991 L3 (Levy)",
+    "PerihelionDistanceKm": 146988804.6827586,
+    "AphelionDistanceKm": 3982295318.034,
+    "MinimumOrbitIntersectionDistanceKm": 11218045.1280516,
+    "Eccentricity": 0.9288178631,
+    "InclinationDegrees": 19.19030997,
+    "ArgumentOfPeriapsisDegrees": 41.47119826,
+    "AscendingNodeDegrees": 329.4309837
+  },
+  {
+    "ObjectName": "P/1999 J6 (SOHO)",
+    "PerihelionDistanceKm": 7339006.455099033,
+    "AphelionDistanceKm": 920026904.805,
+    "MinimumOrbitIntersectionDistanceKm": 1522158.3343725,
+    "Eccentricity": 0.9841773128,
+    "InclinationDegrees": 26.6131418,
+    "ArgumentOfPeriapsisDegrees": 21.97680319,
+    "AscendingNodeDegrees": 81.61378154
+  },
+  {
+    "ObjectName": "P/1999 R1 (SOHO)",
+    "PerihelionDistanceKm": 8528971.16264265,
+    "AphelionDistanceKm": 746493374.793,
+    "MinimumOrbitIntersectionDistanceKm": 11456055.340335298,
+    "Eccentricity": 0.9774091221,
+    "InclinationDegrees": 13.67622884,
+    "ArgumentOfPeriapsisDegrees": 43.68972274,
+    "AscendingNodeDegrees": 4.932374957
+  },
+  {
+    "ObjectName": "P/1999 RO28 (LONEOS)",
+    "PerihelionDistanceKm": 184268488.46006167,
+    "AphelionDistanceKm": 870659607.474,
+    "MinimumOrbitIntersectionDistanceKm": 37046117.504406594,
+    "Eccentricity": 0.6507867331,
+    "InclinationDegrees": 8.191041706,
+    "ArgumentOfPeriapsisDegrees": 219.8588263,
+    "AscendingNodeDegrees": 148.4502956
+  },
+  {
+    "ObjectName": "C/1999 X3 (SOHO)",
+    "PerihelionDistanceKm": 7173402.524781145,
+    "AphelionDistanceKm": 774916970.226,
+    "MinimumOrbitIntersectionDistanceKm": 4689594.0507036,
+    "Eccentricity": 0.9816398786,
+    "InclinationDegrees": 6.337569475,
+    "ArgumentOfPeriapsisDegrees": 353.7341335,
+    "AscendingNodeDegrees": 323.490768
+  },
+  {
+    "ObjectName": "C/2001 OG108 (LONEOS)",
+    "PerihelionDistanceKm": 148707446.14705017,
+    "AphelionDistanceKm": 3831201468.6269994,
+    "MinimumOrbitIntersectionDistanceKm": 45004425.02990519,
+    "Eccentricity": 0.925259301,
+    "InclinationDegrees": 80.24505505,
+    "ArgumentOfPeriapsisDegrees": 116.4195121,
+    "AscendingNodeDegrees": 10.5552957
+  },
+  {
+    "ObjectName": "C/2001 W2 (BATTERS)",
+    "PerihelionDistanceKm": 157237032.2616599,
+    "AphelionDistanceKm": 5207501879.067,
+    "MinimumOrbitIntersectionDistanceKm": 21740609.7552189,
+    "Eccentricity": 0.9413734582,
+    "InclinationDegrees": 115.9130897,
+    "ArgumentOfPeriapsisDegrees": 142.0857566,
+    "AscendingNodeDegrees": 113.3558968
+  },
+  {
+    "ObjectName": "C/2002 R5 (SOHO)",
+    "PerihelionDistanceKm": 7091178.628234266,
+    "AphelionDistanceKm": 954434415.0659999,
+    "MinimumOrbitIntersectionDistanceKm": 14068782.1521108,
+    "Eccentricity": 0.985261262,
+    "InclinationDegrees": 14.12062881,
+    "ArgumentOfPeriapsisDegrees": 45.7237989,
+    "AscendingNodeDegrees": 13.21421538
+  },
+  {
+    "ObjectName": "P/2002 S7 (SOHO)",
+    "PerihelionDistanceKm": 7300162.214572196,
+    "AphelionDistanceKm": 957426372.48,
+    "MinimumOrbitIntersectionDistanceKm": 17144364.775832098,
+    "Eccentricity": 0.9848618681,
+    "InclinationDegrees": 13.57497488,
+    "ArgumentOfPeriapsisDegrees": 52.15494545,
+    "AscendingNodeDegrees": 50.19576776
+  },
+  {
+    "ObjectName": "P/2003 T12 (SOHO)",
+    "PerihelionDistanceKm": 85994831.94482255,
+    "AphelionDistanceKm": 683662269.099,
+    "MinimumOrbitIntersectionDistanceKm": 23072778.7938024,
+    "Eccentricity": 0.7764221763,
+    "InclinationDegrees": 11.4758078,
+    "ArgumentOfPeriapsisDegrees": 217.6773881,
+    "AscendingNodeDegrees": 176.4650989
+  },
+  {
+    "ObjectName": "P/2005 T4 (SWAN)",
+    "PerihelionDistanceKm": 97148773.32313432,
+    "AphelionDistanceKm": 2689769715.186,
+    "MinimumOrbitIntersectionDistanceKm": 23525910.7441527,
+    "Eccentricity": 0.930297059,
+    "InclinationDegrees": 160.0361801,
+    "ArgumentOfPeriapsisDegrees": 41.44353425,
+    "AscendingNodeDegrees": 25.42228788
+  },
+  {
+    "ObjectName": "P/2005 W4 (SOHO)",
+    "PerihelionDistanceKm": 8075346.906643579,
+    "AphelionDistanceKm": 902075160.321,
+    "MinimumOrbitIntersectionDistanceKm": 16104958.770208498,
+    "Eccentricity": 0.9822675576,
+    "InclinationDegrees": 14.5962755,
+    "ArgumentOfPeriapsisDegrees": 49.40000591,
+    "AscendingNodeDegrees": 53.00487076
+  },
+  {
+    "ObjectName": "P/2006 HR30 (Siding Spring)",
+    "PerihelionDistanceKm": 183470973.08588985,
+    "AphelionDistanceKm": 2155705316.7869997,
+    "MinimumOrbitIntersectionDistanceKm": 67753922.82512489,
+    "Eccentricity": 0.8431183899,
+    "InclinationDegrees": 31.88449913,
+    "ArgumentOfPeriapsisDegrees": 117.4138753,
+    "AscendingNodeDegrees": 309.9521628
+  },
+  {
+    "ObjectName": "P/2007 T2 (Kowalski)",
+    "PerihelionDistanceKm": 104099585.40025067,
+    "AphelionDistanceKm": 821292310.143,
+    "MinimumOrbitIntersectionDistanceKm": 23378556.841513198,
+    "Eccentricity": 0.7748340855,
+    "InclinationDegrees": 9.895275619,
+    "ArgumentOfPeriapsisDegrees": 358.5515716,
+    "AscendingNodeDegrees": 3.994965765
+  },
+  {
+    "ObjectName": "P/2008 Y1 (Boattini)",
+    "PerihelionDistanceKm": 190285430.75796548,
+    "AphelionDistanceKm": 1244654284.224,
+    "MinimumOrbitIntersectionDistanceKm": 43326086.5185219,
+    "Eccentricity": 0.7348817591,
+    "InclinationDegrees": 8.805148715,
+    "ArgumentOfPeriapsisDegrees": 162.3648341,
+    "AscendingNodeDegrees": 259.7096838
+  },
+  {
+    "ObjectName": "P/2008 Y12 (SOHO)",
+    "PerihelionDistanceKm": 9785748.212045377,
+    "AphelionDistanceKm": 911051032.563,
+    "MinimumOrbitIntersectionDistanceKm": 6706771.739222399,
+    "Eccentricity": 0.9787495375,
+    "InclinationDegrees": 23.34562318,
+    "ArgumentOfPeriapsisDegrees": 146.6141611,
+    "AscendingNodeDegrees": 312.5525907
+  },
+  {
+    "ObjectName": "P/2009 L2 (Yang-Gao)",
+    "PerihelionDistanceKm": 193897653.25702772,
+    "AphelionDistanceKm": 828772203.678,
+    "MinimumOrbitIntersectionDistanceKm": 43008340.641155094,
+    "Eccentricity": 0.6209298159,
+    "InclinationDegrees": 16.15851413,
+    "ArgumentOfPeriapsisDegrees": 346.954318,
+    "AscendingNodeDegrees": 259.3047568
+  },
+  {
+    "ObjectName": "P/2009 WX51 (Catalina)",
+    "PerihelionDistanceKm": 119671646.02210036,
+    "AphelionDistanceKm": 801844586.952,
+    "MinimumOrbitIntersectionDistanceKm": 1380339.5529489,
+    "Eccentricity": 0.7402970341,
+    "InclinationDegrees": 9.592585691,
+    "ArgumentOfPeriapsisDegrees": 118.0163889,
+    "AscendingNodeDegrees": 31.75826735
+  },
+  {
+    "ObjectName": "C/2010 L5 (WISE)",
+    "PerihelionDistanceKm": 118317080.5366965,
+    "AphelionDistanceKm": 2339710697.7479997,
+    "MinimumOrbitIntersectionDistanceKm": 16995664.4923563,
+    "Eccentricity": 0.9037561917,
+    "InclinationDegrees": 147.051681,
+    "ArgumentOfPeriapsisDegrees": 214.729745,
+    "AscendingNodeDegrees": 206.4730991
+  },
+  {
+    "ObjectName": "P/2011 NO1 (Elenin)",
+    "PerihelionDistanceKm": 185939017.36420295,
+    "AphelionDistanceKm": 1478026962.516,
+    "MinimumOrbitIntersectionDistanceKm": 56944728.67769639,
+    "Eccentricity": 0.776521252,
+    "InclinationDegrees": 15.27233838,
+    "ArgumentOfPeriapsisDegrees": 263.6169668,
+    "AscendingNodeDegrees": 296.0964602
+  },
+  {
+    "ObjectName": "C/2011 S2 (Kowalski)",
+    "PerihelionDistanceKm": 166819299.92133597,
+    "AphelionDistanceKm": 4710836948.342999,
+    "MinimumOrbitIntersectionDistanceKm": 20613090.603752997,
+    "Eccentricity": 0.9316035445,
+    "InclinationDegrees": 17.57253024,
+    "ArgumentOfPeriapsisDegrees": 192.1899464,
+    "AscendingNodeDegrees": 288.0701102
+  },
+  {
+    "ObjectName": "P/2012 NJ (La Sagra)",
+    "PerihelionDistanceKm": 193264003.50087604,
+    "AphelionDistanceKm": 2350182548.697,
+    "MinimumOrbitIntersectionDistanceKm": 47161925.52114059,
+    "Eccentricity": 0.8480618337,
+    "InclinationDegrees": 84.37545937,
+    "ArgumentOfPeriapsisDegrees": 338.4139159,
+    "AscendingNodeDegrees": 315.7631836
+  },
+  {
+    "ObjectName": "P/2013 CU129 (PANSTARRS)",
+    "PerihelionDistanceKm": 119700390.81912155,
+    "AphelionDistanceKm": 742005438.6719999,
+    "MinimumOrbitIntersectionDistanceKm": 12794058.6958761,
+    "Eccentricity": 0.7221050362,
+    "InclinationDegrees": 12.14763226,
+    "ArgumentOfPeriapsisDegrees": 211.9722717,
+    "AscendingNodeDegrees": 46.20979967
+  },
+  {
+    "ObjectName": "P/2013 TL117 (Lemmon)",
+    "PerihelionDistanceKm": 167201362.56085068,
+    "AphelionDistanceKm": 911051032.563,
+    "MinimumOrbitIntersectionDistanceKm": 30161922.690533996,
+    "Eccentricity": 0.6899137951,
+    "InclinationDegrees": 9.365636389,
+    "ArgumentOfPeriapsisDegrees": 112.199132,
+    "AscendingNodeDegrees": 3.362021948
+  },
+  {
+    "ObjectName": "P/2014 U2 (Kowalski)",
+    "PerihelionDistanceKm": 174176542.65008518,
+    "AphelionDistanceKm": 703109992.29,
+    "MinimumOrbitIntersectionDistanceKm": 27476790.509339698,
+    "Eccentricity": 0.6029487638,
+    "InclinationDegrees": 7.495593453,
+    "ArgumentOfPeriapsisDegrees": 35.25220977,
+    "AscendingNodeDegrees": 356.1806792
+  },
+  {
+    "ObjectName": "P/2015 A3 (PANSTARRS)",
+    "PerihelionDistanceKm": 172614581.70784274,
+    "AphelionDistanceKm": 2101850083.335,
+    "MinimumOrbitIntersectionDistanceKm": 30606377.964383695,
+    "Eccentricity": 0.8481676984,
+    "InclinationDegrees": 172.5137446,
+    "ArgumentOfPeriapsisDegrees": 249.5086139,
+    "AscendingNodeDegrees": 277.0821425
+  },
+  {
+    "ObjectName": "C/2015 D1 (SOHO)",
+    "PerihelionDistanceKm": 4236769.731918628,
+    "AphelionDistanceKm": 1473539026.3949997,
+    "MinimumOrbitIntersectionDistanceKm": 77179935.0600612,
+    "Eccentricity": 0.9942677736,
+    "InclinationDegrees": 69.61628937,
+    "ArgumentOfPeriapsisDegrees": 234.9530166,
+    "AscendingNodeDegrees": 95.88138486
+  },
+  {
+    "ObjectName": "C/2015 F2 (Polonia)",
+    "PerihelionDistanceKm": 180945239.5302966,
+    "AphelionDistanceKm": 9444113577.291,
+    "MinimumOrbitIntersectionDistanceKm": 29725695.299572796,
+    "Eccentricity": 0.9623991817,
+    "InclinationDegrees": 28.66103039,
+    "ArgumentOfPeriapsisDegrees": 352.0587584,
+    "AscendingNodeDegrees": 262.4816139
+  },
+  {
+    "ObjectName": "C/2015 F5 (SWAN-Xingming)",
+    "PerihelionDistanceKm": 51761631.01343221,
+    "AphelionDistanceKm": 4597142566.611,
+    "MinimumOrbitIntersectionDistanceKm": 66034444.89929909,
+    "Eccentricity": 0.9777341146,
+    "InclinationDegrees": 149.2569445,
+    "ArgumentOfPeriapsisDegrees": 13.39233003,
+    "AscendingNodeDegrees": 287.7390236
+  }
+]

@@ -1,17 +1,16 @@
 using System.Text.Json;
-using nasa.Core.Models;
-using nasa.Core.Models.GetAsteroids;
+using nasa.Core.Models.GetAsteroidsEarth;
 
 namespace nasa.WebApi.business;
 
-public class GetAsteroidsObjects
+public class GetAsteroidsEarth
 {
     private readonly HttpClient _httpClient;
     private readonly string _apiUrl;
     private readonly string _startDate;
     private readonly string? _endDate;
 
-    public GetAsteroidsObjects(HttpClient httpClient, string apiUrl, string startDate, string? endDate)
+    public GetAsteroidsEarth(HttpClient httpClient, string apiUrl, string startDate, string? endDate)
     {
         _httpClient = httpClient;
         _apiUrl = apiUrl;
@@ -29,14 +28,14 @@ public class GetAsteroidsObjects
                 var end = DateTime.Parse(_endDate);
                 if ((end - start).TotalDays > 7)
                 {
-                    throw new Exception("Диапазон дат не может превышать 7 дней.");
+                    throw new Exception("The date range cannot exceed 7 days.");
                 }
             }
 
             var response = await _httpClient.GetAsync(_apiUrl);
 
             if (!response.IsSuccessStatusCode)
-                throw new Exception($"Ошибка при получении данных: {response.ReasonPhrase}");
+                throw new Exception($"Error receiving data: {response.ReasonPhrase}");
 
             var jsonResponse = await response.Content.ReadAsStringAsync();
 
@@ -46,7 +45,7 @@ public class GetAsteroidsObjects
         }
         catch (Exception ex)
         {
-            throw new Exception($"Произошла ошибка: {ex.Message}");
+            throw new Exception($"An error has occurred: {ex.Message}");
         }
     }
 }

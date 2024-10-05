@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("nasa.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e5d24fa232a63c3b76ed00b450325862e0690a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0268c885141722c3d62b0f85a085d84965efa917")]
 [assembly: System.Reflection.AssemblyProductAttribute("nasa.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("nasa.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
