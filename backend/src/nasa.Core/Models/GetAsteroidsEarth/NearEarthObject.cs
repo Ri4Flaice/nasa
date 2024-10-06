@@ -1,3 +1,5 @@
+using nasa.Core.Models.GetAsteroidsSolarSystem;
+
 namespace nasa.Core.Models.GetAsteroidsEarth;
 
 public class NearEarthObject
@@ -8,4 +10,6 @@ public class NearEarthObject
     public List<CloseApproachData> close_approach_data { get; set; }
     public bool is_potentially_hazardous_asteroid { get; set; }
     public bool is_sentry_object { get; set; }
+    
+    public List<OrbitCoordinate> OrbitCoordinates { get; set; } = [];
 }
