@@ -4,8 +4,11 @@ import SceneInit from "./lib/SceneInit";
 import Planet from "./lib/Planet";
 import Rotation from "./lib/Rotation";
 
+import responseJson from '../../backend/src/nasa.WebApi/nasa_asteroid_solar_system.json';
+
 export default function Home() {
   let gui;
+  const fixedY = 0; // Устанавливаем Y-координату в 0 для горизонтального расположения
 
   const initGui = async () => {
     const dat = await import("dat.gui");
@@ -85,18 +88,68 @@ export default function Home() {
       orbits[planetData.name] = orbit;
     });
 
+    // Функция для проверки пересечения с планетами и Солнцем
+    const isSafePosition = (position) => {
+      const sunDistance = position.length() - sunGeometry.parameters.radius; // Расстояние до Солнца
+      if (sunDistance < 0) return false; // Если астероид касается Солнца
+
+      return planets.every((planetData) => {
+        const planetPosition = new THREE.Vector3(
+          0, // Предполагаем, что планеты находятся на оси Y
+          0,
+          planetData.distance
+        );
+        const planetDistance = position.distanceTo(planetPosition) - planetData.radius;
+        return planetDistance > 0; // Проверка, не касается ли астероид планеты
+      });
+    };
+
+    // Добавление астероидов
+    const asteroids = responseJson.slice(0, 150).map((asteroid) => {
+      const coords = asteroid.OrbitCoordinates;
+
+      // Генерируем начальную позицию, выбирая случайные координаты
+      let position;
+
+      // Генерируем позицию до тех пор, пока она не окажется в безопасной зоне
+      do {
+        const randomIndex = Math.floor(Math.random() * coords.length);
+        position = new THREE.Vector3(
+          coords[randomIndex].X / 1e7 + (Math.random() - 0.5) * 5,
+          fixedY,
+          coords[randomIndex].Z / 1e7 + (Math.random() - 0.5) * 5
+        );
+      } while (!isSafePosition(position)); // Проверяем, является ли позиция безопасной
+
+      const asteroidGeometry = new THREE.SphereGeometry(0.5); // Радиус астероида
+      const asteroidMaterial = new THREE.MeshBasicMaterial({ color: 0xffcc00 }); // Цвет астероида
+      const asteroidMesh = new THREE.Mesh(asteroidGeometry, asteroidMaterial);
+
+      // Устанавливаем начальную позицию
+      asteroidMesh.position.copy(position);
+
+      return {
+        mesh: asteroidMesh,
+        distance: position.length(), // Радиус орбиты
+        angle: Math.random() * Math.PI * 2, // Случайный угол
+        speed: 1 / (position.length() / 0.1), // Скорость вращения пропорциональна расстоянию
+      };
+    });
+
+    asteroids.forEach((asteroid) => {
+      solarSystem.add(asteroid.mesh);
+    });
+
     // Инициализация GUI
     initGui().then(() => {
       const solarSystemGui = gui.addFolder("Солнечная система");
 
       planets.forEach((planetData) => {
-        // Контроль видимости вращения (линии)
         solarSystemGui
           .add(rotations[planetData.name], "visible")
           .name(`${planetData.name} Траектория`)
           .listen();
 
-        // Контроль видимости орбиты (кольца)
         solarSystemGui
           .add(orbits[planetData.name], "visible")
           .name(`${planetData.name} Орбита`)
@@ -106,8 +159,16 @@ export default function Home() {
 
     // Анимация сцены
     const EARTH_YEAR = 2 * Math.PI * (1 / 60) * (1 / 60);
+
     const animate = () => {
-      sunMesh.rotation.y += 0.001;
+      sunMesh.rotation.y += 0.005;
+
+      // Обновление позиций астероидов
+      asteroids.forEach((asteroid) => {
+        asteroid.angle += asteroid.speed; // Увеличиваем угол для вращения
+        asteroid.mesh.position.x = asteroid.distance * Math.cos(asteroid.angle); // Вычисляем новую позицию X
+        asteroid.mesh.position.z = asteroid.distance * Math.sin(asteroid.angle); // Вычисляем новую позицию Z
+      });
 
       // Вращение планет вокруг Солнца
       planetSystems["Меркурий"].group.rotation.y += EARTH_YEAR * 4;
