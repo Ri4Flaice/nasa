@@ -2,24 +2,27 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-// Импорт текстур для планет
+// Импорт текстур для планет и колец
 import sunTexture from "../images/2k_sun.jpg";
 import mercuryTexture from "../images/1.jpg";
 import venusTexture from "../images/2.jpg";
-import venusAtmopshere from "../images/2k_venus_atmosphere.jpg"; // Текстура атмосферы Венеры
+import venusAtmosphereTexture from "../images/2k_venus_atmosphere.jpg"; // Текстура атмосферы Венеры
 import earthTexture from "../images/3.jpg";
 import marsTexture from "../images/4.jpg";
 import jupiterTexture from "../images/5.jpg";
 import saturnTexture from "../images/6.jpg";
+import saturnRingsTexture from "../images/saturn_ring_alpha.png"; // Текстура колец для Сатурна
 import uranusTexture from "../images/7.jpg";
 import neptuneTexture from "../images/8.jpg";
-import saturnRingsTexture from "../images/saturn_ring_alpha.png"; // Текстура колец для Сатурна
+
+import responseJson from '../../../backend/src/nasa.WebApi/nasa_asteroid_solar_system.json';
 
 const ThreeScene = () => {
   const mountRef = useRef(null);
   const planets = [];
-  const asteroidBelt = [];
-  const asteroidOrbits = [];
+  const asteroids = [];
+  const raycaster = new THREE.Raycaster(); // Создаем raycaster для отслеживания кликов
+  const mouse = new THREE.Vector2(); // Вектор для позиции мыши
 
   useEffect(() => {
     // Инициализация сцены, камеры и рендера
@@ -32,7 +35,7 @@ const ThreeScene = () => {
       0.1,
       1000
     );
-    camera.position.z = 25;
+    camera.position.z = 50;
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
@@ -48,7 +51,7 @@ const ThreeScene = () => {
     const sunMap = loader.load(sunTexture);
 
     // Солнце
-    const sunGeometry = new THREE.SphereGeometry(2, 32, 32);
+    const sunGeometry = new THREE.SphereGeometry(3, 32, 32);
     const sunMaterial = new THREE.MeshBasicMaterial({ map: sunMap });
     const sun = new THREE.Mesh(sunGeometry, sunMaterial);
     scene.add(sun);
@@ -62,7 +65,6 @@ const ThreeScene = () => {
         speed: 1.018,
         texture: venusTexture,
         atmosphere: true, // Добавляем атмосферу
-        rings: true, // Добавляем кольца для Венеры
       },
       { distance: 9, size: 0.7, speed: 1.015, texture: earthTexture },
       { distance: 11, size: 0.5, speed: 1.013, texture: marsTexture },
@@ -72,13 +74,13 @@ const ThreeScene = () => {
         size: 1.0,
         speed: 1.006,
         texture: saturnTexture,
-        rings: true,
+        rings: true, // Добавляем кольца для Сатурна
       },
       { distance: 20, size: 0.9, speed: 1.004, texture: uranusTexture },
       { distance: 23, size: 0.85, speed: 1.002, texture: neptuneTexture },
     ];
 
-    // Функция для создания планеты
+    // Функция для создания планеты с кольцами и атмосферой
     const createPlanet = (distance, size, textureUrl, rings, atmosphere) => {
       const texture = loader.load(textureUrl);
       const geometry = new THREE.SphereGeometry(size, 32, 32);
@@ -93,24 +95,21 @@ const ThreeScene = () => {
       });
       scene.add(planet);
 
-      // Добавление атмосферы, если она есть у планеты (например, у Венеры)
+      // Добавление атмосферы, если она есть
       if (atmosphere) {
-        const atmosphereTexture = loader.load(venusAtmopshere);
+        const atmosphereTexture = loader.load(venusAtmosphereTexture);
         const atmosphereGeometry = new THREE.SphereGeometry(size * 1.1, 32, 32); // Сфера для атмосферы
         const atmosphereMaterial = new THREE.MeshBasicMaterial({
           map: atmosphereTexture,
           side: THREE.DoubleSide, // Отображение с обеих сторон
           transparent: true,
-          opacity: 1, // Непрозрачность атмосферы
+          opacity: 0.5, // Полупрозрачность атмосферы
         });
-        const atmosphereMesh = new THREE.Mesh(
-          atmosphereGeometry,
-          atmosphereMaterial
-        );
+        const atmosphereMesh = new THREE.Mesh(atmosphereGeometry, atmosphereMaterial);
         planet.add(atmosphereMesh); // Добавляем атмосферу как дочерний элемент
       }
 
-      // Добавление колец, если это планета с кольцами
+      // Добавление колец, если это планета с кольцами (например, Сатурн)
       if (rings) {
         const ringGeometry = new THREE.RingGeometry(size * 1.2, size * 1.8, 32);
         const ringTexture = loader.load(saturnRingsTexture);
@@ -120,9 +119,9 @@ const ThreeScene = () => {
           transparent: true,
           opacity: 0.8, // Прозрачность колец
         });
-        const rings = new THREE.Mesh(ringGeometry, ringMaterial);
-        rings.rotation.x = Math.PI / 2; // Поворачиваем кольца
-        planet.add(rings);
+        const ringMesh = new THREE.Mesh(ringGeometry, ringMaterial);
+        ringMesh.rotation.x = Math.PI / 2; // Поворачиваем кольца
+        planet.add(ringMesh);
       }
     };
 
@@ -131,46 +130,83 @@ const ThreeScene = () => {
       createPlanet(distance, size, texture, rings, atmosphere);
     });
 
-    // Создание пояса астероидов
+    // Создание астероидов
     const asteroidGeometry = new THREE.DodecahedronGeometry(0.3, 0);
     const asteroidMaterial = new THREE.MeshBasicMaterial({ color: 0x808080 });
 
-    for (let i = 0; i < 100; i++) {
-      const asteroid = new THREE.Mesh(asteroidGeometry, asteroidMaterial);
-      const distance = Math.random() * 30 + 10; // Радиус орбиты
-      const speed = Math.random() * 0.02 + 0.005; // Скорость движения
+    // Проверка длины массива астероидов
+    console.log("Количество астероидов в JSON:", responseJson.length);
 
+    responseJson.slice(0, 150).forEach((asteroidData) => {
+      const { OrbitCoordinates } = asteroidData;
+
+      const asteroid = new THREE.Mesh(asteroidGeometry, asteroidMaterial);
+
+      const initialPosition = OrbitCoordinates[0];
       asteroid.position.set(
-        distance * Math.cos(Math.random() * Math.PI * 2),
-        (Math.random() - 0.5) * 2, // Высота над плоскостью
-        distance * Math.sin(Math.random() * Math.PI * 2)
+        initialPosition.X / 100000000,
+        initialPosition.Y / 100000000,
+        initialPosition.Z / 100000000
       );
 
-      asteroidBelt.push(asteroid);
-      asteroidOrbits.push({ distance, speed });
+      asteroids.push({ asteroid, OrbitCoordinates, currentStep: 0 });
       scene.add(asteroid);
-    }
+
+      // Событие клика на астероид, вывод данных в консоль
+      asteroid.userData = asteroidData;
+    });
+
+    // Вывод информации об астероидах
+    asteroids.forEach((asteroidData, index) => {
+      console.log(`${index + 1}. Астероид:`, asteroidData.asteroid.userData);
+    });
+
+    // Обработчик события клика мыши
+    const handleClick = (event) => {
+      // Преобразование координат мыши в нормализованные координаты устройства
+      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+      mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+      // Установка raycaster
+      raycaster.setFromCamera(mouse, camera);
+
+      // Выявление пересечений с астероидами
+      const intersects = raycaster.intersectObjects(asteroids.map(a => a.asteroid));
+
+      if (intersects.length > 0) {
+        const asteroid = intersects[0].object;
+        console.log("Астероид:", asteroid.userData); // Вывод данных в консоль
+      }
+    };
+
+    window.addEventListener('click', handleClick); // Добавляем слушатель события клика
 
     // Анимация сцены
     const animate = () => {
       requestAnimationFrame(animate);
+      
       sun.rotation.y += 0.01;
 
-      const time = Date.now() * 0.001;
-
-      // Анимация планет
+      // Включение движения планет (раскомментируйте при необходимости)
       planets.forEach(({ planet, distance, speed }) => {
+        const time = Date.now() * 0.001;
         planet.position.x = distance * Math.cos(time * speed);
         planet.position.z = distance * Math.sin(time * speed);
       });
 
-      // Анимация астероидов
-      asteroidBelt.forEach((asteroid, index) => {
-        const { distance, speed } = asteroidOrbits[index];
-        asteroid.position.x = distance * Math.cos(time * speed);
-        asteroid.position.z = distance * Math.sin(time * speed);
-        asteroid.rotation.x += 0.01;
-        asteroid.rotation.y += 0.01;
+      // Включение движения астероидов (раскомментируйте при необходимости)
+      asteroids.forEach((asteroidData) => {
+        const { asteroid, OrbitCoordinates, currentStep } = asteroidData;
+        const nextStep = (currentStep + 1) % OrbitCoordinates.length;
+        const nextPosition = OrbitCoordinates[nextStep];
+
+        asteroid.position.set(
+          nextPosition.X / 100000000,
+          nextPosition.Y / 100000000,
+          nextPosition.Z / 100000000
+        );
+
+        asteroidData.currentStep = nextStep;
       });
 
       controls.update();
@@ -179,23 +215,15 @@ const ThreeScene = () => {
 
     animate();
 
-    // Управление изменением размера экрана
-    const handleResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Очистка ресурса
+    // Очистка при размонтировании компонента
     return () => {
+      window.removeEventListener('click', handleClick);
       mountRef.current.removeChild(renderer.domElement);
-      window.removeEventListener("resize", handleResize);
+      renderer.dispose();
     };
   }, []);
 
-  return <div ref={mountRef} className="w-full h-full cursor-pointer" />;
+  return <div ref={mountRef} />;
 };
 
 export default ThreeScene;
